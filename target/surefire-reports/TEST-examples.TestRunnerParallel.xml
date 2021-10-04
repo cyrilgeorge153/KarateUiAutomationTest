@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="examples.TestRunnerParallel" time="44.072" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="examples.TestRunnerParallel" time="24.352" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.10\bin"/>
-    <property name="sun.java.command" value="C:\Users\cyril\AppData\Local\Temp\surefire14159250105482405487\surefirebooter8508526708696751699.jar C:\Users\cyril\AppData\Local\Temp\surefire14159250105482405487 2021-10-04T19-55-49_753-jvmRun1 surefire894778483781217968tmp surefire_016622966102727415375tmp"/>
+    <property name="sun.java.command" value="C:\Users\cyril\AppData\Local\Temp\surefire126154705654284675\surefirebooter5448972179448196987.jar C:\Users\cyril\AppData\Local\Temp\surefire126154705654284675 2021-10-04T20-29-56_658-jvmRun1 surefire1250277675748915509tmp surefire_016296526211550377378tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="TestRunnerParallel"/>
     <property name="surefire.test.class.path" value="C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\test-classes;C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\classes;C:\Users\cyril\.m2\repository\com\intuit\karate\karate-junit5\1.1.0\karate-junit5-1.1.0.jar;C:\Users\cyril\.m2\repository\com\intuit\karate\karate-core\1.1.0\karate-core-1.1.0.jar;C:\Users\cyril\.m2\repository\org\graalvm\js\js-scriptengine\21.2.0\js-scriptengine-21.2.0.jar;C:\Users\cyril\.m2\repository\org\graalvm\sdk\graal-sdk\21.2.0\graal-sdk-21.2.0.jar;C:\Users\cyril\.m2\repository\org\graalvm\js\js\21.2.0\js-21.2.0.jar;C:\Users\cyril\.m2\repository\org\graalvm\regex\regex\21.2.0\regex-21.2.0.jar;C:\Users\cyril\.m2\repository\org\graalvm\truffle\truffle-api\21.2.0\truffle-api-21.2.0.jar;C:\Users\cyril\.m2\repository\com\ibm\icu\icu4j\69.1\icu4j-69.1.jar;C:\Users\cyril\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\cyril\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\cyril\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\cyril\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\cyril\.m2\repository\com\jayway\jsonpath\json-path\2.6.0\json-path-2.6.0.jar;C:\Users\cyril\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\cyril\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\cyril\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\cyril\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\cyril\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\cyril\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar;C:\Users\cyril\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\cyril\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\cyril\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\cyril\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\cyril\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\cyril\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\cyril\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\cyril\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\cyril\AppData\Local\Temp\surefire14159250105482405487\surefirebooter8508526708696751699.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\cyril\AppData\Local\Temp\surefire126154705654284675\surefirebooter5448972179448196987.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.10+8-LTS-162"/>
@@ -43,7 +43,7 @@
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="browser" value="nativechrome"/>
+    <property name="browser" value="chrome"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="java.vendor.version" value="18.9"/>
     <property name="localRepository" value="C:\Users\cyril\.m2\repository"/>
@@ -62,5 +62,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testParallel" classname="examples.TestRunnerParallel" time="44.053"/>
+  <testcase name="testParallel" classname="examples.TestRunnerParallel" time="24.258"/>
 </testsuite>

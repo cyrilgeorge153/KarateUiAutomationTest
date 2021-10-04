@@ -5,11 +5,11 @@ Feature: common login steps
     * call read 'locators.json'
 
   Scenario: common login steps of app
-  When driver 'https://www.saucedemo.com/'
-  And maximize()
-  And waitFor('#user-name')
-  And input('input[id=user-name]', 'standard_user')
-  And waitFor('#password')
-  And input('input[id=password]', 'secret_sauce')
-  And waitFor('#login-button')
-  And click('input[id=login-button]')
+    When driver 'https://www.saucedemo.com/'
+    And maximize()
+    And waitFor(login_feature.login_username)
+    And input(login_feature.login_username,'standard_user')
+    And waitFor(login_feature.login_password)
+    And input(login_feature.login_password, 'secret_sauce')
+    And waitFor(login_feature.login_button)
+    And click(login_feature.login_button)
