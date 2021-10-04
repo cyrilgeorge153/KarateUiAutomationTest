@@ -1,16 +1,9 @@
 Feature: swag labs home page ui test cases
 
   Background:
-    Given configure driver = { type: 'chrome', headless: false	}
-    #Given configure proxy = 'http://my.proxy.host:50640'
-    When driver 'https://www.saucedemo.com/'
-    And maximize()
-    And waitFor('#user-name')
-    And input('input[id=user-name]', 'standard_user')
-    And waitFor('#password')
-    And input('input[id=password]', 'secret_sauce')
-    And waitFor('#login-button')
-    And click('input[id=login-button]')
+#    Given configure driver = { type: 'chromedriver', executable: 'src/test/java/examples/users/chromedriver.exe', showDriverLog: false}
+#    Given configure driver = { type: 'geckodriver', executable: 'src/test/java/examples/users/geckodriver.exe', showDriverLog: false}
+    * call read('/preconditions/common.feature')
 
   Scenario: swag labs home page heading display test
     Then waitFor('.title')

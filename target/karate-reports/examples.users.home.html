@@ -30,16 +30,16 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-10-03 12:30:04 PM</div>
+    <div>2021-10-04 04:12:59 PM</div>
   </div>        
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1:15]"><span>[1:15]</span> <span>swag labs home page heading display test</span></a>
+            <a href="#[1:8]"><span>[1:8]</span> <span>swag labs home page heading display test</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[2:20]"><span>[2:20]</span> <span>swag labs home page cart display test</span></a>
+            <a href="#[2:13]"><span>[2:13]</span> <span>swag labs home page cart display test</span></a>
           </div>
         </div>
       </div>
@@ -53,65 +53,45 @@
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:15]">
+          <div class="scenario-heading" id="[1:8]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:15]</span>
+                Scenario: <span>[1:8]</span>
                 <span class="scenario-name">swag labs home page heading display test</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>58392</span>
+              <span>ms:</span>&nbsp;<span>26828</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:15]bg">
+            <div class="step-container" id="[1:8]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:15]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>configure driver = { type: &#39;chrome&#39;, headless: false	}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">124</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.4">12:29:05.299 karate.env system property was: null 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[1:15]bg"><div>
+          <div data-parent="[1:8]bg"><div>
   
 
   <div class="step-row">
     <div class="step-container">
       <div class="step-ref passed"></div>
       
-      <div class="step-cell comment">#Given configure proxy = &#39;http://my.proxy.host:50640&#39;</div>
+      <div class="step-cell comment">#    Given configure driver = { type: &#39;chromedriver&#39;, executable: &#39;src/test/java/examples/users/chromedriver.exe&#39;, showDriverLog: false}</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    Given configure driver = { type: &#39;geckodriver&#39;, executable: &#39;src/test/java/examples/users/geckodriver.exe&#39;, showDriverLog: false}</div>
     </div>
     <div class="time-cell comment"></div>            
   </div>
@@ -121,10 +101,10 @@
       <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>driver &#39;https://www.saucedemo.com/&#39;</span>
+        <span>*</span>&nbsp;<span>call read(&#39;/preconditions/common.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">57164</div>
+    <div class="time-cell passed">26688</div>
   </div>
 
    
@@ -133,24 +113,291 @@
 
   
 
-  <div class="preformatted" data-parent="0.6">12:29:05.545 preferred port 9222 not available, will use: 54064
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">examples.users.preconditions.common</div>
+      </div>
+      <div class="time-cell passed">26598</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>driver &#39;https://www.saucedemo.com/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24633</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.5">16:12:29.365 the browser set is: firefox, default: &quot;chrome&quot; 
+16:12:29.383 the grid url set is: false, default: false 
+16:12:29.428 Selected Firefox 
+16:12:29.542 preferred port 4444 not available, will use: 56982
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[1:15]bg"><div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>maximize()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>waitFor(&#39;#user-name&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">29</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>input(&#39;input[id=user-name]&#39;, &#39;standard_user&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">90</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>waitFor(&#39;#password&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>input(&#39;input[id=password]&#39;, &#39;secret_sauce&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1172</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>waitFor(&#39;#login-button&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">51</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>click(&#39;input[id=login-button]&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">592</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref bg-step">7</div>
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>maximize()</span>
+        <span>Then</span>&nbsp;<span>waitFor(&#39;.title&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">55</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match exists(&#39;.title&#39;) == true</span>
       </div>
     </div>
     <div class="time-cell passed">57</div>
@@ -168,244 +415,20 @@
 
 </div>
 </div>
-          <div data-parent="[1:15]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.8">
-      <div class="step-ref bg-step">8</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>waitFor(&#39;#user-name&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">54</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1:15]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.9">
-      <div class="step-ref bg-step">9</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>input(&#39;input[id=user-name]&#39;, &#39;standard_user&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">297</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1:15]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.10">
-      <div class="step-ref bg-step">10</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>waitFor(&#39;#password&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">4</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1:15]bg"><div>
+          <div><div>
   
 
   
 
   <div class="step-row">
     <div class="step-container" id="0.11">
-      <div class="step-ref bg-step">11</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>input(&#39;input[id=password]&#39;, &#39;secret_sauce&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">224</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1:15]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.12">
-      <div class="step-ref bg-step">12</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>waitFor(&#39;#login-button&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">4</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1:15]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.13">
-      <div class="step-ref bg-step">13</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>click(&#39;input[id=login-button]&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">99</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.16">
-      <div class="step-ref passed">16</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>waitFor(&#39;.title&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">270</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.17">
-      <div class="step-ref passed">17</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match exists(&#39;.title&#39;) == true</span>
-      </div>
-    </div>
-    <div class="time-cell passed">61</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.18">
-      <div class="step-ref passed">18</div>
+      <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match text(&#39;.title&#39;) == &#39;Products&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">35</div>
+    <div class="time-cell passed">29</div>
   </div>
 
    
@@ -422,65 +445,45 @@
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[2:20]">
+          <div class="scenario-heading" id="[2:13]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[2:20]</span>
+                Scenario: <span>[2:13]</span>
                 <span class="scenario-name">swag labs home page cart display test</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>54181</span>
+              <span>ms:</span>&nbsp;<span>26527</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[2:20]bg">
+            <div class="step-container" id="[2:13]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[2:20]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>configure driver = { type: &#39;chrome&#39;, headless: false	}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">118</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.4">12:29:05.298 karate.env system property was: null 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[2:20]bg"><div>
+          <div data-parent="[2:13]bg"><div>
   
 
   <div class="step-row">
     <div class="step-container">
       <div class="step-ref passed"></div>
       
-      <div class="step-cell comment">#Given configure proxy = &#39;http://my.proxy.host:50640&#39;</div>
+      <div class="step-cell comment">#    Given configure driver = { type: &#39;chromedriver&#39;, executable: &#39;src/test/java/examples/users/chromedriver.exe&#39;, showDriverLog: false}</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    Given configure driver = { type: &#39;geckodriver&#39;, executable: &#39;src/test/java/examples/users/geckodriver.exe&#39;, showDriverLog: false}</div>
     </div>
     <div class="time-cell comment"></div>            
   </div>
@@ -490,10 +493,10 @@
       <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>driver &#39;https://www.saucedemo.com/&#39;</span>
+        <span>*</span>&nbsp;<span>call read(&#39;/preconditions/common.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">52213</div>
+    <div class="time-cell passed">26361</div>
   </div>
 
    
@@ -502,164 +505,61 @@
 
   
 
-  <div class="preformatted" data-parent="0.6">12:29:05.549 preferred port 9222 not available, will use: 54066
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">examples.users.preconditions.common</div>
+      </div>
+      <div class="time-cell passed">26257</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>driver &#39;https://www.saucedemo.com/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">23859</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.5">16:12:29.365 the browser set is: firefox, default: &quot;chrome&quot; 
+16:12:29.382 the grid url set is: false, default: false 
+16:12:29.427 Selected Firefox 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[2:20]bg"><div>
+      <div><div>
   
 
   
 
-  <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref bg-step">7</div>
-      
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>maximize()</span>
-      </div>
-    </div>
-    <div class="time-cell passed">179</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2:20]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.8">
-      <div class="step-ref bg-step">8</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>waitFor(&#39;#user-name&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">91</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2:20]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.9">
-      <div class="step-ref bg-step">9</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>input(&#39;input[id=user-name]&#39;, &#39;standard_user&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">572</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2:20]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.10">
-      <div class="step-ref bg-step">10</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>waitFor(&#39;#password&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">10</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2:20]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.11">
-      <div class="step-ref bg-step">11</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>input(&#39;input[id=password]&#39;, &#39;secret_sauce&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">364</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2:20]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.12">
-      <div class="step-ref bg-step">12</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>waitFor(&#39;#login-button&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">31</div>
@@ -677,20 +577,20 @@
 
 </div>
 </div>
-          <div data-parent="[2:20]bg"><div>
+      <div><div>
   
 
   
 
-  <div class="step-row">
-    <div class="step-container" id="0.13">
-      <div class="step-ref bg-step">13</div>
-      
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>click(&#39;input[id=login-button]&#39;)</span>
+        <span>And</span>&nbsp;<span>waitFor(&#39;#user-name&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">275</div>
+    <div class="time-cell passed">35</div>
   </div>
 
    
@@ -705,20 +605,165 @@
 
 </div>
 </div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>input(&#39;input[id=user-name]&#39;, &#39;standard_user&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">226</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>waitFor(&#39;#password&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>input(&#39;input[id=password]&#39;, &#39;secret_sauce&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">120</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>waitFor(&#39;#login-button&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>click(&#39;input[id=login-button]&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1956</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
           <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.21">
-      <div class="step-ref passed">21</div>
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>waitFor(&#39;.shopping_cart_link&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">232</div>
+    <div class="time-cell passed">65</div>
   </div>
 
    
@@ -739,14 +784,14 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.22">
-      <div class="step-ref passed">22</div>
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match exists(&#39;.shopping_cart_link&#39;) == true</span>
       </div>
     </div>
-    <div class="time-cell passed">94</div>
+    <div class="time-cell passed">100</div>
   </div>
 
    
