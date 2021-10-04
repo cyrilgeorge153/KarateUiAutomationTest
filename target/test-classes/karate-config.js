@@ -39,12 +39,12 @@ function fn() {
           karate.log("Selected Firefox in grid");
       }
    }
-else if (browser == 'firefoxheadless')
+else if (browser == 'headlessfirefox')
    {
       if (!grid_url)
        {
          karate.configure('driver', {type: 'geckodriver', executable: 'src/test/java/examples/users/geckodriver.exe', showDriverLog: true,  webDriverSession: { "capabilities": { "alwaysMatch": { "moz:firefoxOptions": { args: ["-headless"] } } } } } );
-          karate.log("Selected Firefox Headless");
+          karate.log("Selected Headless Firefox ");
       }
       else
       {
@@ -52,18 +52,44 @@ else if (browser == 'firefoxheadless')
           karate.log("Selected Firefox in grid");
       }
    }
-   else if (browser == 'chromeheadless')
+   else if (browser == 'headlesschrome')
       {
          if (!grid_url)
           {
             karate.configure('driver', {type: 'chromedriver', executable: 'src/test/java/examples/users/chromedriver.exe' , webDriverSession: { desiredCapabilities: { browserName: 'chrome' , "goog:chromeOptions": { headless: true } } } } );
-             karate.log("Selected Firefox Headless");
+             karate.log("Selected Headless Chrome");
          }
          else
          {
              karate.configure('driver', { type: 'chromedriver', start: false, webDriverUrl: grid_url });
-             karate.log("Selected Firefox in grid");
+             karate.log("Selected Chrome in grid");
          }
       }
+   else if (browser == 'nativechrome')
+            {
+               if (!grid_url)
+                {
+                  karate.configure('driver', { type: 'chrome', headless: false });
+                   karate.log("Selected Native Chrome");
+               }
+               else
+               {
+                   karate.configure('driver', { type: 'chrome', start: false, webDriverUrl: grid_url });
+                   karate.log("Selected Native Chrome in grid");
+               }
+            }
+   else if (browser == 'headlessnativechrome')
+               {
+                  if (!grid_url)
+                   {
+                     karate.configure('driver', { type: 'chrome', headless: true });
+                      karate.log("Selected Headless Native Chrome");
+                  }
+                  else
+                  {
+                      karate.configure('driver', { type: 'chrome', start: false, webDriverUrl: grid_url });
+                      karate.log("Selected Headless Native Chrome in grid");
+                  }
+               }
   return config;
 }

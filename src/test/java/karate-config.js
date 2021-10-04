@@ -65,5 +65,31 @@ else if (browser == 'headlessfirefox')
              karate.log("Selected Chrome in grid");
          }
       }
+   else if (browser == 'nativechrome')
+            {
+               if (!grid_url)
+                {
+                  karate.configure('driver', { type: 'chrome', headless: false });
+                   karate.log("Selected Native Chrome");
+               }
+               else
+               {
+                   karate.configure('driver', { type: 'chrome', start: false, webDriverUrl: grid_url });
+                   karate.log("Selected Native Chrome in grid");
+               }
+            }
+   else if (browser == 'headlessnativechrome')
+               {
+                  if (!grid_url)
+                   {
+                     karate.configure('driver', { type: 'chrome', headless: true });
+                      karate.log("Selected Headless Native Chrome");
+                  }
+                  else
+                  {
+                      karate.configure('driver', { type: 'chrome', start: false, webDriverUrl: grid_url });
+                      karate.log("Selected Headless Native Chrome in grid");
+                  }
+               }
   return config;
 }

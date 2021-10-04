@@ -1,6 +1,9 @@
 @ignore
 Feature: common login steps
 
+  Background:
+    * call read 'locators.json'
+
   Scenario: common login steps of app
   When driver 'https://www.saucedemo.com/'
   And maximize()

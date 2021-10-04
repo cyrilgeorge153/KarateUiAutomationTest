@@ -1,0 +1,10 @@
+{
+  "login_feature": {
+    "login_button": "#login-button",
+    "login_logo": ".login_logo"
+  },
+  "home_feature": {
+    "home_title": ".title",
+    "home_shopping_cart_link": ".shopping_cart_link"
+  }
+}

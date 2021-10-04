@@ -1,767 +1,979 @@
-16:12:26.999 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-16:12:27.024 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
-16:12:29.360 [pool-1-thread-1] INFO  com.intuit.karate - the browser set is: firefox, default: "chrome" 
-16:12:29.361 [pool-1-thread-2] INFO  com.intuit.karate - the browser set is: firefox, default: "chrome" 
-16:12:29.359 [pool-1-thread-3] INFO  com.intuit.karate - the browser set is: firefox, default: "chrome" 
-16:12:29.358 [pool-1-thread-4] INFO  com.intuit.karate - the browser set is: firefox, default: "chrome" 
-16:12:29.381 [pool-1-thread-2] INFO  com.intuit.karate - the grid url set is: false, default: false 
-16:12:29.382 [pool-1-thread-4] INFO  com.intuit.karate - the grid url set is: false, default: false 
-16:12:29.382 [pool-1-thread-1] INFO  com.intuit.karate - the grid url set is: false, default: false 
-16:12:29.411 [pool-1-thread-3] INFO  com.intuit.karate - the grid url set is: false, default: false 
-16:12:29.415 [pool-1-thread-4] INFO  com.intuit.karate - Selected Firefox 
-16:12:29.417 [pool-1-thread-3] INFO  com.intuit.karate - Selected Firefox 
-16:12:29.426 [pool-1-thread-2] INFO  com.intuit.karate - Selected Firefox 
-16:12:29.425 [pool-1-thread-1] INFO  com.intuit.karate - Selected Firefox 
-16:12:29.531 [pool-1-thread-2] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 4444
-16:12:29.533 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 56980
-16:12:29.533 [pool-1-thread-4] WARN  c.intuit.karate.driver.DriverOptions - preferred port 4444 not available, will use: 56980
-16:12:29.536 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 56981
-16:12:29.537 [pool-1-thread-3] WARN  c.intuit.karate.driver.DriverOptions - preferred port 4444 not available, will use: 56981
-16:12:29.540 [pool-1-thread-1] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 56982
-16:12:29.541 [pool-1-thread-1] WARN  c.intuit.karate.driver.DriverOptions - preferred port 4444 not available, will use: 56982
-16:12:29.562 [geckodriver_1633344149520] DEBUG c.i.k.d.geckodriver_1633344149520 - command: [src/test/java/examples/users/geckodriver.exe, --port=56980], working dir: target\geckodriver_1633344149520
-16:12:29.562 [pool-1-thread-3] DEBUG c.i.k.d.geckodriver_1633344149513 - poll attempt #0 for port to be ready - localhost:56981
-16:12:29.564 [pool-1-thread-1] DEBUG c.i.k.d.geckodriver_1633344149513 - poll attempt #0 for port to be ready - localhost:56982
-16:12:29.564 [geckodriver_1633344149511] DEBUG c.i.k.d.geckodriver_1633344149511 - command: [src/test/java/examples/users/geckodriver.exe, --port=4444], working dir: target\geckodriver_1633344149511
-16:12:29.588 [geckodriver_1633344149513] DEBUG c.i.k.d.geckodriver_1633344149513 - command: [src/test/java/examples/users/geckodriver.exe, --port=56981], working dir: target\geckodriver_1633344149513
-16:12:29.619 [pool-1-thread-2] DEBUG c.i.k.d.geckodriver_1633344149511 - poll attempt #0 for port to be ready - localhost:4444
-16:12:29.623 [pool-1-thread-4] DEBUG c.i.k.d.geckodriver_1633344149520 - poll attempt #0 for port to be ready - localhost:56980
-16:12:29.626 [geckodriver_1633344149513] DEBUG c.i.k.d.geckodriver_1633344149513 - command: [src/test/java/examples/users/geckodriver.exe, --port=56982], working dir: target\geckodriver_1633344149513
-16:12:29.725 [geckodriver_1633344149520-out] DEBUG c.i.k.d.geckodriver_1633344149520 - 1633344149724	geckodriver	INFO	Listening on 127.0.0.1:56980
-16:12:29.786 [geckodriver_1633344149511-out] DEBUG c.i.k.d.geckodriver_1633344149511 - 1633344149785	geckodriver	INFO	Listening on 127.0.0.1:4444
-16:12:29.793 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - 1633344149791	geckodriver	INFO	Listening on 127.0.0.1:56982
-16:12:29.799 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - 1633344149798	geckodriver	INFO	Listening on 127.0.0.1:56981
-16:12:31.042 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-1 > POST http://localhost:56981/session
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 58
-1 > Host: localhost:56981
+19:55:52.831 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:55:52.847 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+19:55:54.802 [pool-1-thread-2] INFO  com.intuit.karate - the browser set is: nativechrome, default: "chrome" 
+19:55:54.802 [pool-1-thread-4] INFO  com.intuit.karate - the browser set is: nativechrome, default: "chrome" 
+19:55:54.802 [pool-1-thread-1] INFO  com.intuit.karate - the browser set is: nativechrome, default: "chrome" 
+19:55:54.802 [pool-1-thread-3] INFO  com.intuit.karate - the browser set is: nativechrome, default: "chrome" 
+19:55:54.818 [pool-1-thread-2] INFO  com.intuit.karate - the grid url set is: false, default: false 
+19:55:54.818 [pool-1-thread-1] INFO  com.intuit.karate - the grid url set is: false, default: false 
+19:55:54.818 [pool-1-thread-4] INFO  com.intuit.karate - the grid url set is: false, default: false 
+19:55:54.833 [pool-1-thread-3] INFO  com.intuit.karate - the grid url set is: false, default: false 
+19:55:54.849 [pool-1-thread-4] INFO  com.intuit.karate - Selected Native Chrome 
+19:55:54.849 [pool-1-thread-1] INFO  com.intuit.karate - Selected Native Chrome 
+19:55:54.865 [pool-1-thread-3] INFO  com.intuit.karate - Selected Native Chrome 
+19:55:54.865 [pool-1-thread-2] INFO  com.intuit.karate - Selected Native Chrome 
+19:55:54.974 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9222
+19:55:54.990 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 50129
+19:55:54.990 [pool-1-thread-3] WARN  c.intuit.karate.driver.DriverOptions - preferred port 9222 not available, will use: 50129
+19:55:55.005 [pool-1-thread-4] DEBUG c.i.k.driver.chrome_1633357554958 - poll attempt #0 for port to be ready - localhost:9222
+19:55:54.990 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1633357554974 - poll attempt #0 for port to be ready - localhost:50129
+19:55:55.005 [chrome_1633357554974] DEBUG c.i.k.driver.chrome_1633357554974 - command: [C:\Program Files (x86)\Google\Chrome\Application\chrome.exe, --remote-debugging-port=50129, --no-first-run, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chrome_1633357554974, --disable-popup-blocking], working dir: target\chrome_1633357554974
+19:55:55.021 [chrome_1633357554958] DEBUG c.i.k.driver.chrome_1633357554958 - command: [C:\Program Files (x86)\Google\Chrome\Application\chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chrome_1633357554958, --disable-popup-blocking], working dir: target\chrome_1633357554958
+19:55:55.099 [pool-1-thread-1] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 50132
+19:55:55.099 [pool-1-thread-1] WARN  c.intuit.karate.driver.DriverOptions - preferred port 9222 not available, will use: 50132
+19:55:55.099 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - poll attempt #0 for port to be ready - localhost:50132
+19:55:55.115 [pool-1-thread-2] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 50134
+19:55:55.115 [pool-1-thread-2] WARN  c.intuit.karate.driver.DriverOptions - preferred port 9222 not available, will use: 50134
+19:55:55.130 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - poll attempt #0 for port to be ready - localhost:50134
+19:55:55.146 [chrome_1633357555115] DEBUG c.i.k.driver.chrome_1633357555115 - command: [C:\Program Files (x86)\Google\Chrome\Application\chrome.exe, --remote-debugging-port=50134, --no-first-run, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chrome_1633357555115, --disable-popup-blocking], working dir: target\chrome_1633357555115
+19:55:55.146 [chrome_1633357555099] DEBUG c.i.k.driver.chrome_1633357555099 - command: [C:\Program Files (x86)\Google\Chrome\Application\chrome.exe, --remote-debugging-port=50132, --no-first-run, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chrome_1633357555099, --disable-popup-blocking], working dir: target\chrome_1633357555099
+19:55:55.693 [chrome_1633357554974-out] DEBUG c.i.k.driver.chrome_1633357554974 - 
+19:55:55.693 [chrome_1633357554974-out] DEBUG c.i.k.driver.chrome_1633357554974 - DevTools listening on ws://127.0.0.1:50129/devtools/browser/b45a06d6-c659-4997-9d92-ba21feb5f882
+19:55:55.708 [chrome_1633357555115-out] DEBUG c.i.k.driver.chrome_1633357555115 - 
+19:55:55.708 [chrome_1633357555115-out] DEBUG c.i.k.driver.chrome_1633357555115 - DevTools listening on ws://127.0.0.1:50134/devtools/browser/c46cc7c8-ea62-40ea-b9f7-70991f3fed6e
+19:55:55.833 [chrome_1633357555099-out] DEBUG c.i.k.driver.chrome_1633357555099 - 
+19:55:55.833 [chrome_1633357555099-out] DEBUG c.i.k.driver.chrome_1633357555099 - DevTools listening on ws://127.0.0.1:50132/devtools/browser/a24b6553-c3ea-4f3a-ab8a-f689cf9bcce9
+19:55:55.943 [chrome_1633357554958-out] DEBUG c.i.k.driver.chrome_1633357554958 - 
+19:55:55.943 [chrome_1633357554958-out] DEBUG c.i.k.driver.chrome_1633357554958 - DevTools listening on ws://127.0.0.1:9222/devtools/browser/e90d1036-fb14-43d3-ac21-a178554982e8
+19:56:01.942 [chrome_1633357554974-out] DEBUG c.i.k.driver.chrome_1633357554974 - [18272:11800:1004/195601.942:ERROR:chrome_browser_main_extra_parts_metrics.cc(228)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+19:56:01.943 [chrome_1633357554974-out] DEBUG c.i.k.driver.chrome_1633357554974 - [18272:11800:1004/195601.942:ERROR:chrome_browser_main_extra_parts_metrics.cc(231)] crbug.com/1216328: Checking Bluetooth availability ended.
+19:56:01.943 [chrome_1633357554974-out] DEBUG c.i.k.driver.chrome_1633357554974 - [18272:11800:1004/195601.942:ERROR:chrome_browser_main_extra_parts_metrics.cc(234)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+19:56:02.564 [chrome_1633357554974-out] DEBUG c.i.k.driver.chrome_1633357554974 - [18272:11800:1004/195602.564:ERROR:chrome_browser_main_extra_parts_metrics.cc(238)] crbug.com/1216328: Checking default browser status ended.
+19:56:02.895 [chrome_1633357555099-out] DEBUG c.i.k.driver.chrome_1633357555099 - [10896:6736:1004/195602.895:ERROR:chrome_browser_main_extra_parts_metrics.cc(228)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+19:56:02.896 [chrome_1633357555099-out] DEBUG c.i.k.driver.chrome_1633357555099 - [10896:6736:1004/195602.895:ERROR:chrome_browser_main_extra_parts_metrics.cc(231)] crbug.com/1216328: Checking Bluetooth availability ended.
+19:56:02.897 [chrome_1633357555099-out] DEBUG c.i.k.driver.chrome_1633357555099 - [10896:6736:1004/195602.895:ERROR:chrome_browser_main_extra_parts_metrics.cc(234)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+19:56:02.903 [chrome_1633357555099-out] DEBUG c.i.k.driver.chrome_1633357555099 - [10896:6736:1004/195602.903:ERROR:chrome_browser_main_extra_parts_metrics.cc(238)] crbug.com/1216328: Checking default browser status ended.
+19:56:02.916 [chrome_1633357555115-out] DEBUG c.i.k.driver.chrome_1633357555115 - [21892:13596:1004/195601.951:ERROR:chrome_browser_main_extra_parts_metrics.cc(228)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+19:56:02.917 [chrome_1633357555115-out] DEBUG c.i.k.driver.chrome_1633357555115 - [21892:13596:1004/195602.916:ERROR:chrome_browser_main_extra_parts_metrics.cc(231)] crbug.com/1216328: Checking Bluetooth availability ended.
+19:56:02.917 [chrome_1633357555115-out] DEBUG c.i.k.driver.chrome_1633357555115 - [21892:13596:1004/195602.916:ERROR:chrome_browser_main_extra_parts_metrics.cc(234)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+19:56:02.922 [chrome_1633357554958-out] DEBUG c.i.k.driver.chrome_1633357554958 - [11812:9320:1004/195602.921:ERROR:chrome_browser_main_extra_parts_metrics.cc(228)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+19:56:02.922 [chrome_1633357554958-out] DEBUG c.i.k.driver.chrome_1633357554958 - [11812:9320:1004/195602.921:ERROR:chrome_browser_main_extra_parts_metrics.cc(231)] crbug.com/1216328: Checking Bluetooth availability ended.
+19:56:02.922 [chrome_1633357554958-out] DEBUG c.i.k.driver.chrome_1633357554958 - [11812:9320:1004/195602.921:ERROR:chrome_browser_main_extra_parts_metrics.cc(234)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+19:56:02.928 [chrome_1633357554958-out] DEBUG c.i.k.driver.chrome_1633357554958 - [11812:9320:1004/195602.928:ERROR:chrome_browser_main_extra_parts_metrics.cc(238)] crbug.com/1216328: Checking default browser status ended.
+19:56:02.932 [chrome_1633357555115-out] DEBUG c.i.k.driver.chrome_1633357555115 - [21892:13596:1004/195602.932:ERROR:chrome_browser_main_extra_parts_metrics.cc(238)] crbug.com/1216328: Checking default browser status ended.
+19:56:04.429 [chrome_1633357555099-out] DEBUG c.i.k.driver.chrome_1633357555099 - [10896:14232:1004/195604.398:ERROR:device_event_log_impl.cc(214)] [19:56:04.410] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+19:56:04.429 [chrome_1633357555099-out] DEBUG c.i.k.driver.chrome_1633357555099 - [10896:14232:1004/195604.413:ERROR:device_event_log_impl.cc(214)] [19:56:04.413] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+19:56:06.494 [chrome_1633357555115-out] DEBUG c.i.k.driver.chrome_1633357555115 - [21892:7240:1004/195606.494:ERROR:device_event_log_impl.cc(214)] [19:56:06.489] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+19:56:06.500 [chrome_1633357555115-out] DEBUG c.i.k.driver.chrome_1633357555115 - [21892:7240:1004/195606.499:ERROR:device_event_log_impl.cc(214)] [19:56:06.494] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+19:56:06.510 [chrome_1633357555115-out] DEBUG c.i.k.driver.chrome_1633357555115 - [21892:7240:1004/195606.509:ERROR:device_event_log_impl.cc(214)] [19:56:06.503] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+19:56:06.855 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 > Accept-Encoding: gzip,deflate
-{"capabilities":{"alwaysMatch":{"browserName":"firefox"}}}
 
-16:12:31.042 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-1 > POST http://localhost:56982/session
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 58
-1 > Host: localhost:56982
+
+19:56:06.855 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:50129/json
+1 > Host: localhost:50129
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 > Accept-Encoding: gzip,deflate
-{"capabilities":{"alwaysMatch":{"browserName":"firefox"}}}
 
-16:12:31.042 [pool-1-thread-4] DEBUG com.intuit.karate - request:
-1 > POST http://localhost:56980/session
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 58
-1 > Host: localhost:56980
+
+19:56:06.867 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:50132/json
+1 > Host: localhost:50132
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 > Accept-Encoding: gzip,deflate
-{"capabilities":{"alwaysMatch":{"browserName":"firefox"}}}
 
-16:12:31.042 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-1 > POST http://localhost:4444/session
-1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 58
-1 > Host: localhost:4444
+
+19:56:06.855 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:50134/json
+1 > Host: localhost:50134
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
 1 > Accept-Encoding: gzip,deflate
-{"capabilities":{"alwaysMatch":{"browserName":"firefox"}}}
 
-16:12:31.097 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - 1633344151097	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cyril\\AppData\\Local\\Temp\\rust_mozprofileipB2rV"
-16:12:31.098 [geckodriver_1633344149511-out] DEBUG c.i.k.d.geckodriver_1633344149511 - 1633344151099	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cyril\\AppData\\Local\\Temp\\rust_mozprofile8XS7ht"
-16:12:31.114 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - 1633344151115	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cyril\\AppData\\Local\\Temp\\rust_mozprofilenEltQO"
-16:12:31.641 [geckodriver_1633344149520-out] DEBUG c.i.k.d.geckodriver_1633344149520 - 1633344151641	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\cyril\\AppData\\Local\\Temp\\rust_mozprofilevk0Kom"
-16:12:32.581 [geckodriver_1633344149511-out] DEBUG c.i.k.d.geckodriver_1633344149511 - 1633344152581	Marionette	INFO	Marionette enabled
-16:12:32.582 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - 1633344152582	Marionette	INFO	Marionette enabled
-16:12:32.647 [geckodriver_1633344149520-out] DEBUG c.i.k.d.geckodriver_1633344149520 - 1633344152647	Marionette	INFO	Marionette enabled
-16:12:33.189 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - 1633344153189	Marionette	INFO	Marionette enabled
-16:12:42.624 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cyril\\AppData\\Local\\Temp\\rust_mozprofileipB2rV\\search.json.mozlz4", (void 0)))
-16:12:42.656 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cyril\\AppData\\Local\\Temp\\rust_mozprofilenEltQO\\search.json.mozlz4", (void 0)))
-16:12:44.228 [geckodriver_1633344149520-out] DEBUG c.i.k.d.geckodriver_1633344149520 - console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cyril\\AppData\\Local\\Temp\\rust_mozprofilevk0Kom\\search.json.mozlz4", (void 0)))
-16:12:44.425 [geckodriver_1633344149511-out] DEBUG c.i.k.d.geckodriver_1633344149511 - console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cyril\\AppData\\Local\\Temp\\rust_mozprofile8XS7ht\\search.json.mozlz4", (void 0)))
-16:12:45.304 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - 1633344165303	Marionette	INFO	Listening on port 56992
-16:12:45.518 [geckodriver_1633344149520-out] DEBUG c.i.k.d.geckodriver_1633344149520 - 1633344165518	Marionette	INFO	Listening on port 56991
-16:12:45.852 [geckodriver_1633344149511-out] DEBUG c.i.k.d.geckodriver_1633344149511 - 1633344165852	Marionette	INFO	Listening on port 56993
-16:12:46.026 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 14978
+
+19:56:07.311 [chrome_1633357554974-out] DEBUG c.i.k.driver.chrome_1633357554974 - [18272:6224:1004/195607.311:ERROR:device_event_log_impl.cc(214)] [19:56:07.300] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+19:56:07.322 [chrome_1633357554974-out] DEBUG c.i.k.driver.chrome_1633357554974 - [18272:6224:1004/195607.322:ERROR:device_event_log_impl.cc(214)] [19:56:07.311] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+19:56:07.453 [chrome_1633357554958-out] DEBUG c.i.k.driver.chrome_1633357554958 - [11812:2876:1004/195607.453:ERROR:device_event_log_impl.cc(214)] [19:56:07.444] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+19:56:07.460 [chrome_1633357554958-out] DEBUG c.i.k.driver.chrome_1633357554958 - [11812:2876:1004/195607.457:ERROR:device_event_log_impl.cc(214)] [19:56:07.448] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+19:56:08.238 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1310
 1 < 200
-1 < content-type: application/json; charset=utf-8
-1 < cache-control: no-cache
-1 < content-length: 724
-1 < date: Mon, 04 Oct 2021 10:42:31 GMT
-{"value":{"sessionId":"d680f11b-e9ee-40f6-8e4e-97738883a960","capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"91.0.2","moz:accessibilityChecks":false,"moz:buildID":"20210823123856","moz:geckodriverVersion":"0.30.0","moz:headless":false,"moz:processID":11680,"moz:profile":"C:\\Users\\cyril\\AppData\\Local\\Temp\\rust_mozprofilevk0Kom","moz:shutdownTimeout":60000,"moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true,"pageLoadStrategy":"normal","platformName":"windows","platformVersion":"10.0","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify"}}}
-16:12:46.083 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - 1633344166084	Marionette	INFO	Listening on port 56994
-16:12:46.143 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 15100
+1 < Content-Length: 2192
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50132/devtools/page/BFF4A4164C154C76666E8CA1D15E49BD",
+   "id": "BFF4A4164C154C76666E8CA1D15E49BD",
+   "title": "CryptoTokenExtension",
+   "type": "background_page",
+   "url": "chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50132/devtools/page/BFF4A4164C154C76666E8CA1D15E49BD"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50132/devtools/page/D53886349B420D6A46C915995B110E2A",
+   "id": "D53886349B420D6A46C915995B110E2A",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50132/devtools/page/D53886349B420D6A46C915995B110E2A"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50132/devtools/page/386317C0D81D4CE652AA8EDA904E8C59",
+   "id": "386317C0D81D4CE652AA8EDA904E8C59",
+   "title": "Feedback",
+   "type": "background_page",
+   "url": "chrome-extension://gfdkimpbcpahaombhbimeihdjnejgicl/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50132/devtools/page/386317C0D81D4CE652AA8EDA904E8C59"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50132/devtools/page/4EB05AC91DE1260F10622B31E9AF53BA",
+   "id": "4EB05AC91DE1260F10622B31E9AF53BA",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:50132/devtools/page/4EB05AC91DE1260F10622B31E9AF53BA"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50132/devtools/page/BB109327197F8EF7F53E4DC524DFEE22",
+   "id": "BB109327197F8EF7F53E4DC524DFEE22",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:50132/devtools/page/BB109327197F8EF7F53E4DC524DFEE22"
+} ]
+
+19:56:08.292 [pool-1-thread-1] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 12100 ms - http://localhost:50132/json
+19:56:08.295 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:50132/json
+1 > Host: localhost:50132
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+19:56:08.308 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 3
 1 < 200
-1 < content-type: application/json; charset=utf-8
-1 < cache-control: no-cache
-1 < content-length: 724
-1 < date: Mon, 04 Oct 2021 10:42:31 GMT
-{"value":{"sessionId":"25ebe06a-6fe0-4849-9c0e-98cb7a3693ec","capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"91.0.2","moz:accessibilityChecks":false,"moz:buildID":"20210823123856","moz:geckodriverVersion":"0.30.0","moz:headless":false,"moz:processID":15136,"moz:profile":"C:\\Users\\cyril\\AppData\\Local\\Temp\\rust_mozprofile8XS7ht","moz:shutdownTimeout":60000,"moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true,"pageLoadStrategy":"normal","platformName":"windows","platformVersion":"10.0","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify"}}}
-16:12:46.203 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 15161
+1 < Content-Length: 2192
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50132/devtools/page/BFF4A4164C154C76666E8CA1D15E49BD",
+   "id": "BFF4A4164C154C76666E8CA1D15E49BD",
+   "title": "CryptoTokenExtension",
+   "type": "background_page",
+   "url": "chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50132/devtools/page/BFF4A4164C154C76666E8CA1D15E49BD"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50132/devtools/page/D53886349B420D6A46C915995B110E2A",
+   "id": "D53886349B420D6A46C915995B110E2A",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50132/devtools/page/D53886349B420D6A46C915995B110E2A"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50132/devtools/page/386317C0D81D4CE652AA8EDA904E8C59",
+   "id": "386317C0D81D4CE652AA8EDA904E8C59",
+   "title": "Feedback",
+   "type": "background_page",
+   "url": "chrome-extension://gfdkimpbcpahaombhbimeihdjnejgicl/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50132/devtools/page/386317C0D81D4CE652AA8EDA904E8C59"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50132/devtools/page/4EB05AC91DE1260F10622B31E9AF53BA",
+   "id": "4EB05AC91DE1260F10622B31E9AF53BA",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:50132/devtools/page/4EB05AC91DE1260F10622B31E9AF53BA"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50132/devtools/page/BB109327197F8EF7F53E4DC524DFEE22",
+   "id": "BB109327197F8EF7F53E4DC524DFEE22",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:50132/devtools/page/BB109327197F8EF7F53E4DC524DFEE22"
+} ]
+
+19:56:08.327 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - root frame id: BB109327197F8EF7F53E4DC524DFEE22
+19:56:08.944 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 2074
 1 < 200
-1 < content-type: application/json; charset=utf-8
-1 < cache-control: no-cache
-1 < content-length: 724
-1 < date: Mon, 04 Oct 2021 10:42:31 GMT
-{"value":{"sessionId":"c46fe007-1147-4169-bc25-f1cc846dc1a6","capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"91.0.2","moz:accessibilityChecks":false,"moz:buildID":"20210823123856","moz:geckodriverVersion":"0.30.0","moz:headless":false,"moz:processID":17116,"moz:profile":"C:\\Users\\cyril\\AppData\\Local\\Temp\\rust_mozprofilenEltQO","moz:shutdownTimeout":60000,"moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true,"pageLoadStrategy":"normal","platformName":"windows","platformVersion":"10.0","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify"}}}
-16:12:46.214 [pool-1-thread-3] DEBUG c.i.k.d.geckodriver_1633344149513 - init session id: c46fe007-1147-4169-bc25-f1cc846dc1a6
-16:12:46.216 [pool-1-thread-2] DEBUG c.i.k.d.geckodriver_1633344149511 - init session id: 25ebe06a-6fe0-4849-9c0e-98cb7a3693ec
-16:12:46.219 [pool-1-thread-4] DEBUG c.i.k.d.geckodriver_1633344149520 - init session id: d680f11b-e9ee-40f6-8e4e-97738883a960
-16:12:46.821 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-2 > POST http://localhost:56981/session/c46fe007-1147-4169-bc25-f1cc846dc1a6/url
-2 > Content-Type: application/json; charset=UTF-8
-2 > Content-Length: 39
-2 > Host: localhost:56981
-2 > Connection: Keep-Alive
-2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2 > Accept-Encoding: gzip,deflate
-{"url":"https:\/\/www.saucedemo.com\/"}
+1 < Content-Length: 2192
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50134/devtools/page/9DE0169CC259176C35B2CAFC83DDC2D2",
+   "id": "9DE0169CC259176C35B2CAFC83DDC2D2",
+   "title": "CryptoTokenExtension",
+   "type": "background_page",
+   "url": "chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50134/devtools/page/9DE0169CC259176C35B2CAFC83DDC2D2"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50134/devtools/page/C82B27B45F071A1E2D27674FC31693EC",
+   "id": "C82B27B45F071A1E2D27674FC31693EC",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50134/devtools/page/C82B27B45F071A1E2D27674FC31693EC"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50134/devtools/page/A929159625EECC294D3BB545344BA65D",
+   "id": "A929159625EECC294D3BB545344BA65D",
+   "title": "Feedback",
+   "type": "background_page",
+   "url": "chrome-extension://gfdkimpbcpahaombhbimeihdjnejgicl/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50134/devtools/page/A929159625EECC294D3BB545344BA65D"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50134/devtools/page/9331867251B6C58121ADF6BF73DDE53C",
+   "id": "9331867251B6C58121ADF6BF73DDE53C",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:50134/devtools/page/9331867251B6C58121ADF6BF73DDE53C"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50134/devtools/page/1FC502EEDEE8A835E37A429A36C8E5D0",
+   "id": "1FC502EEDEE8A835E37A429A36C8E5D0",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:50134/devtools/page/1FC502EEDEE8A835E37A429A36C8E5D0"
+} ]
 
-16:12:46.840 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-2 > POST http://localhost:4444/session/25ebe06a-6fe0-4849-9c0e-98cb7a3693ec/url
-2 > Content-Type: application/json; charset=UTF-8
-2 > Content-Length: 39
-2 > Host: localhost:4444
-2 > Connection: Keep-Alive
-2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2 > Accept-Encoding: gzip,deflate
-{"url":"https:\/\/www.saucedemo.com\/"}
+19:56:08.957 [pool-1-thread-2] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 12765 ms - http://localhost:50134/json
+19:56:08.968 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:50134/json
+1 > Host: localhost:50134
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 > Accept-Encoding: gzip,deflate
 
-16:12:46.852 [pool-1-thread-4] DEBUG com.intuit.karate - request:
-2 > POST http://localhost:56980/session/d680f11b-e9ee-40f6-8e4e-97738883a960/url
-2 > Content-Type: application/json; charset=UTF-8
-2 > Content-Length: 39
-2 > Host: localhost:56980
-2 > Connection: Keep-Alive
-2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2 > Accept-Encoding: gzip,deflate
-{"url":"https:\/\/www.saucedemo.com\/"}
 
-16:12:47.159 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 16117
+19:56:09.105 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 2240
 1 < 200
-1 < content-type: application/json; charset=utf-8
-1 < cache-control: no-cache
-1 < content-length: 724
-1 < date: Mon, 04 Oct 2021 10:42:31 GMT
-{"value":{"sessionId":"2af135c1-265e-48fb-a32f-e0a82e9dfa18","capabilities":{"acceptInsecureCerts":false,"browserName":"firefox","browserVersion":"91.0.2","moz:accessibilityChecks":false,"moz:buildID":"20210823123856","moz:geckodriverVersion":"0.30.0","moz:headless":false,"moz:processID":14912,"moz:profile":"C:\\Users\\cyril\\AppData\\Local\\Temp\\rust_mozprofileipB2rV","moz:shutdownTimeout":60000,"moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true,"pageLoadStrategy":"normal","platformName":"windows","platformVersion":"10.0","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify"}}}
-16:12:47.162 [pool-1-thread-1] DEBUG c.i.k.d.geckodriver_1633344149513 - init session id: 2af135c1-265e-48fb-a32f-e0a82e9dfa18
-16:12:47.492 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-2 > POST http://localhost:56982/session/2af135c1-265e-48fb-a32f-e0a82e9dfa18/url
-2 > Content-Type: application/json; charset=UTF-8
-2 > Content-Length: 39
-2 > Host: localhost:56982
-2 > Connection: Keep-Alive
-2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2 > Accept-Encoding: gzip,deflate
-{"url":"https:\/\/www.saucedemo.com\/"}
+1 < Content-Length: 2192
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50129/devtools/page/A43D7E3F9CAA018D15FA52E4DBA2D695",
+   "id": "A43D7E3F9CAA018D15FA52E4DBA2D695",
+   "title": "CryptoTokenExtension",
+   "type": "background_page",
+   "url": "chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50129/devtools/page/A43D7E3F9CAA018D15FA52E4DBA2D695"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50129/devtools/page/FEC64D20489418BB7CDC89A776D6D5C5",
+   "id": "FEC64D20489418BB7CDC89A776D6D5C5",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50129/devtools/page/FEC64D20489418BB7CDC89A776D6D5C5"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50129/devtools/page/9442AB359694BDA77286526D9618E744",
+   "id": "9442AB359694BDA77286526D9618E744",
+   "title": "Feedback",
+   "type": "background_page",
+   "url": "chrome-extension://gfdkimpbcpahaombhbimeihdjnejgicl/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50129/devtools/page/9442AB359694BDA77286526D9618E744"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50129/devtools/page/4715709D14E12F7DD43C67701F0EBB99",
+   "id": "4715709D14E12F7DD43C67701F0EBB99",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:50129/devtools/page/4715709D14E12F7DD43C67701F0EBB99"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50129/devtools/page/F403A22DBADDD741191DFE4787993B20",
+   "id": "F403A22DBADDD741191DFE4787993B20",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:50129/devtools/page/F403A22DBADDD741191DFE4787993B20"
+} ]
 
-16:12:50.886 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 4033
-2 < 200
-2 < content-type: application/json; charset=utf-8
-2 < cache-control: no-cache
-2 < content-length: 14
-2 < date: Mon, 04 Oct 2021 10:42:46 GMT
-{"value":null}
-16:12:50.947 [pool-1-thread-4] DEBUG com.intuit.karate - request:
-3 > POST http://localhost:56980/session/d680f11b-e9ee-40f6-8e4e-97738883a960/window/maximize
-3 > Content-Type: application/json; charset=UTF-8
-3 > Content-Length: 2
-3 > Host: localhost:56980
-3 > Connection: Keep-Alive
-3 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-3 > Accept-Encoding: gzip,deflate
-{}
-
-16:12:50.955 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 8
-3 < 200
-3 < content-type: application/json; charset=utf-8
-3 < cache-control: no-cache
-3 < content-length: 51
-3 < date: Mon, 04 Oct 2021 10:42:50 GMT
-{"value":{"x":-8,"y":-8,"width":1382,"height":744}}
-16:12:51.102 [pool-1-thread-4] DEBUG com.intuit.karate - request:
-4 > POST http://localhost:56980/session/d680f11b-e9ee-40f6-8e4e-97738883a960/execute/sync
-4 > Content-Type: application/json; charset=UTF-8
-4 > Content-Length: 79
-4 > Host: localhost:56980
-4 > Connection: Keep-Alive
-4 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-4 > Accept-Encoding: gzip,deflate
-{"script":"return (document.querySelector(\".login_logo\") != null)","args":[]}
-
-16:12:51.134 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 31
-4 < 200
-4 < content-type: application/json; charset=utf-8
-4 < cache-control: no-cache
-4 < content-length: 14
-4 < date: Mon, 04 Oct 2021 10:42:51 GMT
-{"value":true}
-16:12:51.157 [pool-1-thread-4] DEBUG com.intuit.karate - request:
-5 > POST http://localhost:56980/session/d680f11b-e9ee-40f6-8e4e-97738883a960/execute/sync
-5 > Content-Type: application/json; charset=UTF-8
-5 > Content-Length: 77
-5 > Host: localhost:56980
-5 > Connection: Keep-Alive
-5 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-5 > Accept-Encoding: gzip,deflate
-{"script":"return document.querySelector(\".login_logo\") != null","args":[]}
-
-16:12:51.167 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 10
-5 < 200
-5 < content-type: application/json; charset=utf-8
-5 < cache-control: no-cache
-5 < content-length: 14
-5 < date: Mon, 04 Oct 2021 10:42:51 GMT
-{"value":true}
-16:12:51.211 [pool-1-thread-4] DEBUG com.intuit.karate - request:
-6 > DELETE http://localhost:56980/session/d680f11b-e9ee-40f6-8e4e-97738883a960
-6 > Host: localhost:56980
-6 > Connection: Keep-Alive
-6 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-6 > Accept-Encoding: gzip,deflate
+19:56:09.125 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 13074 ms - http://localhost:50129/json
+19:56:09.131 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:50129/json
+1 > Host: localhost:50129
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 > Accept-Encoding: gzip,deflate
 
 
-16:12:51.231 [geckodriver_1633344149520-out] DEBUG c.i.k.d.geckodriver_1633344149520 - 1633344171230	Marionette	INFO	Stopped listening on port 56991
-16:12:51.452 [geckodriver_1633344149520-out] DEBUG c.i.k.d.geckodriver_1633344149520 - JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
-16:12:51.517 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 4695
-2 < 200
-2 < content-type: application/json; charset=utf-8
-2 < cache-control: no-cache
-2 < content-length: 14
-2 < date: Mon, 04 Oct 2021 10:42:46 GMT
-{"value":null}
-16:12:51.521 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-3 > POST http://localhost:56981/session/c46fe007-1147-4169-bc25-f1cc846dc1a6/window/maximize
-3 > Content-Type: application/json; charset=UTF-8
-3 > Content-Length: 2
-3 > Host: localhost:56981
-3 > Connection: Keep-Alive
-3 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-3 > Accept-Encoding: gzip,deflate
-{}
+19:56:09.398 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 2533
+1 < 200
+1 < Content-Length: 2182
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/F2B8DA02FFA1B24F71DD3D5B7519EDFD",
+   "id": "F2B8DA02FFA1B24F71DD3D5B7519EDFD",
+   "title": "CryptoTokenExtension",
+   "type": "background_page",
+   "url": "chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/F2B8DA02FFA1B24F71DD3D5B7519EDFD"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/85D4B3BC902D1E160E125D590F4B64AE",
+   "id": "85D4B3BC902D1E160E125D590F4B64AE",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/85D4B3BC902D1E160E125D590F4B64AE"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/C10EC24FD725BDB0E7159959FB5F95E2",
+   "id": "C10EC24FD725BDB0E7159959FB5F95E2",
+   "title": "Feedback",
+   "type": "background_page",
+   "url": "chrome-extension://gfdkimpbcpahaombhbimeihdjnejgicl/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/C10EC24FD725BDB0E7159959FB5F95E2"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/5AC3AF326736889486641D90E5C2966D",
+   "id": "5AC3AF326736889486641D90E5C2966D",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/5AC3AF326736889486641D90E5C2966D"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/0D2D9AA2CA4839B7733D4263D52DEFA1",
+   "id": "0D2D9AA2CA4839B7733D4263D52DEFA1",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/0D2D9AA2CA4839B7733D4263D52DEFA1"
+} ]
 
-16:12:51.533 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 11
-3 < 200
-3 < content-type: application/json; charset=utf-8
-3 < cache-control: no-cache
-3 < content-length: 51
-3 < date: Mon, 04 Oct 2021 10:42:51 GMT
-{"value":{"x":-8,"y":-8,"width":1382,"height":744}}
-16:12:51.836 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-4 > POST http://localhost:56981/session/c46fe007-1147-4169-bc25-f1cc846dc1a6/execute/sync
-4 > Content-Type: application/json; charset=UTF-8
-4 > Content-Length: 81
-4 > Host: localhost:56981
-4 > Connection: Keep-Alive
-4 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-4 > Accept-Encoding: gzip,deflate
-{"script":"return (document.querySelector(\"#login-button\") != null)","args":[]}
-
-16:12:51.867 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 30
-4 < 200
-4 < content-type: application/json; charset=utf-8
-4 < cache-control: no-cache
-4 < content-length: 14
-4 < date: Mon, 04 Oct 2021 10:42:51 GMT
-{"value":true}
-16:12:51.875 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-5 > POST http://localhost:56981/session/c46fe007-1147-4169-bc25-f1cc846dc1a6/execute/sync
-5 > Content-Type: application/json; charset=UTF-8
-5 > Content-Length: 79
-5 > Host: localhost:56981
-5 > Connection: Keep-Alive
-5 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-5 > Accept-Encoding: gzip,deflate
-{"script":"return document.querySelector(\"#login-button\") != null","args":[]}
-
-16:12:51.893 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 18
-5 < 200
-5 < content-type: application/json; charset=utf-8
-5 < cache-control: no-cache
-5 < content-length: 14
-5 < date: Mon, 04 Oct 2021 10:42:51 GMT
-{"value":true}
-16:12:51.899 [pool-1-thread-3] DEBUG com.intuit.karate - request:
-6 > DELETE http://localhost:56981/session/c46fe007-1147-4169-bc25-f1cc846dc1a6
-6 > Host: localhost:56981
-6 > Connection: Keep-Alive
-6 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-6 > Accept-Encoding: gzip,deflate
+19:56:09.409 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 13358 ms - http://localhost:9222/json
+19:56:09.411 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+1 > Accept-Encoding: gzip,deflate
 
 
-16:12:51.902 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - 1633344171903	Marionette	INFO	Stopped listening on port 56992
-16:12:52.180 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
-16:12:53.350 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 6509
-2 < 200
-2 < content-type: application/json; charset=utf-8
-2 < cache-control: no-cache
-2 < content-length: 14
-2 < date: Mon, 04 Oct 2021 10:42:46 GMT
-{"value":null}
-16:12:53.357 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-3 > POST http://localhost:4444/session/25ebe06a-6fe0-4849-9c0e-98cb7a3693ec/window/maximize
-3 > Content-Type: application/json; charset=UTF-8
-3 > Content-Length: 2
-3 > Host: localhost:4444
-3 > Connection: Keep-Alive
-3 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-3 > Accept-Encoding: gzip,deflate
-{}
+19:56:09.622 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 489
+1 < 200
+1 < Content-Length: 2192
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50129/devtools/page/A43D7E3F9CAA018D15FA52E4DBA2D695",
+   "id": "A43D7E3F9CAA018D15FA52E4DBA2D695",
+   "title": "CryptoTokenExtension",
+   "type": "background_page",
+   "url": "chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50129/devtools/page/A43D7E3F9CAA018D15FA52E4DBA2D695"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50129/devtools/page/FEC64D20489418BB7CDC89A776D6D5C5",
+   "id": "FEC64D20489418BB7CDC89A776D6D5C5",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50129/devtools/page/FEC64D20489418BB7CDC89A776D6D5C5"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50129/devtools/page/9442AB359694BDA77286526D9618E744",
+   "id": "9442AB359694BDA77286526D9618E744",
+   "title": "Feedback",
+   "type": "background_page",
+   "url": "chrome-extension://gfdkimpbcpahaombhbimeihdjnejgicl/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50129/devtools/page/9442AB359694BDA77286526D9618E744"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50129/devtools/page/4715709D14E12F7DD43C67701F0EBB99",
+   "id": "4715709D14E12F7DD43C67701F0EBB99",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:50129/devtools/page/4715709D14E12F7DD43C67701F0EBB99"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50129/devtools/page/F403A22DBADDD741191DFE4787993B20",
+   "id": "F403A22DBADDD741191DFE4787993B20",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:50129/devtools/page/F403A22DBADDD741191DFE4787993B20"
+} ]
 
-16:12:53.381 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 23
-3 < 200
-3 < content-type: application/json; charset=utf-8
-3 < cache-control: no-cache
-3 < content-length: 51
-3 < date: Mon, 04 Oct 2021 10:42:53 GMT
-{"value":{"x":-8,"y":-8,"width":1382,"height":744}}
-16:12:53.388 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-4 > POST http://localhost:4444/session/25ebe06a-6fe0-4849-9c0e-98cb7a3693ec/execute/sync
-4 > Content-Type: application/json; charset=UTF-8
-4 > Content-Length: 78
-4 > Host: localhost:4444
-4 > Connection: Keep-Alive
-4 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-4 > Accept-Encoding: gzip,deflate
-{"script":"return (document.querySelector(\"#user-name\") != null)","args":[]}
+19:56:09.632 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1633357554974 - root frame id: F403A22DBADDD741191DFE4787993B20
+19:56:09.858 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 889
+1 < 200
+1 < Content-Length: 2192
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50134/devtools/page/9DE0169CC259176C35B2CAFC83DDC2D2",
+   "id": "9DE0169CC259176C35B2CAFC83DDC2D2",
+   "title": "CryptoTokenExtension",
+   "type": "background_page",
+   "url": "chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50134/devtools/page/9DE0169CC259176C35B2CAFC83DDC2D2"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50134/devtools/page/C82B27B45F071A1E2D27674FC31693EC",
+   "id": "C82B27B45F071A1E2D27674FC31693EC",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50134/devtools/page/C82B27B45F071A1E2D27674FC31693EC"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50134/devtools/page/A929159625EECC294D3BB545344BA65D",
+   "id": "A929159625EECC294D3BB545344BA65D",
+   "title": "Feedback",
+   "type": "background_page",
+   "url": "chrome-extension://gfdkimpbcpahaombhbimeihdjnejgicl/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:50134/devtools/page/A929159625EECC294D3BB545344BA65D"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50134/devtools/page/9331867251B6C58121ADF6BF73DDE53C",
+   "id": "9331867251B6C58121ADF6BF73DDE53C",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:50134/devtools/page/9331867251B6C58121ADF6BF73DDE53C"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50134/devtools/page/1FC502EEDEE8A835E37A429A36C8E5D0",
+   "id": "1FC502EEDEE8A835E37A429A36C8E5D0",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:50134/devtools/page/1FC502EEDEE8A835E37A429A36C8E5D0"
+} ]
 
-16:12:53.416 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 28
-4 < 200
-4 < content-type: application/json; charset=utf-8
-4 < cache-control: no-cache
-4 < content-length: 14
-4 < date: Mon, 04 Oct 2021 10:42:53 GMT
-{"value":true}
-16:12:53.433 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-5 > POST http://localhost:4444/session/25ebe06a-6fe0-4849-9c0e-98cb7a3693ec/element
-5 > Content-Type: application/json; charset=UTF-8
-5 > Content-Length: 54
-5 > Host: localhost:4444
-5 > Connection: Keep-Alive
-5 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-5 > Accept-Encoding: gzip,deflate
-{"using":"css selector","value":"input[id=user-name]"}
+19:56:09.860 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - root frame id: 1FC502EEDEE8A835E37A429A36C8E5D0
+19:56:09.889 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 475
+1 < 200
+1 < Content-Length: 2182
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/F2B8DA02FFA1B24F71DD3D5B7519EDFD",
+   "id": "F2B8DA02FFA1B24F71DD3D5B7519EDFD",
+   "title": "CryptoTokenExtension",
+   "type": "background_page",
+   "url": "chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/F2B8DA02FFA1B24F71DD3D5B7519EDFD"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/85D4B3BC902D1E160E125D590F4B64AE",
+   "id": "85D4B3BC902D1E160E125D590F4B64AE",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/85D4B3BC902D1E160E125D590F4B64AE"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/C10EC24FD725BDB0E7159959FB5F95E2",
+   "id": "C10EC24FD725BDB0E7159959FB5F95E2",
+   "title": "Feedback",
+   "type": "background_page",
+   "url": "chrome-extension://gfdkimpbcpahaombhbimeihdjnejgicl/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/C10EC24FD725BDB0E7159959FB5F95E2"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/5AC3AF326736889486641D90E5C2966D",
+   "id": "5AC3AF326736889486641D90E5C2966D",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/5AC3AF326736889486641D90E5C2966D"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/0D2D9AA2CA4839B7733D4263D52DEFA1",
+   "id": "0D2D9AA2CA4839B7733D4263D52DEFA1",
+   "title": "Welcome to Chrome",
+   "type": "page",
+   "url": "chrome://welcome/",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/0D2D9AA2CA4839B7733D4263D52DEFA1"
+} ]
 
-16:12:53.464 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 31
-5 < 200
-5 < content-type: application/json; charset=utf-8
-5 < cache-control: no-cache
-5 < content-length: 88
-5 < date: Mon, 04 Oct 2021 10:42:53 GMT
-{"value":{"element-6066-11e4-a52e-4f735466cecf":"678b8620-8ac9-4c1b-a0bf-0ef2c7092fe0"}}
-16:12:53.468 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-6 > POST http://localhost:4444/session/25ebe06a-6fe0-4849-9c0e-98cb7a3693ec/element/678b8620-8ac9-4c1b-a0bf-0ef2c7092fe0/value
-6 > Content-Type: application/json; charset=UTF-8
-6 > Content-Length: 24
-6 > Host: localhost:4444
-6 > Connection: Keep-Alive
-6 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-6 > Accept-Encoding: gzip,deflate
-{"text":"standard_user"}
-
-16:12:53.643 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 173
-6 < 200
-6 < content-type: application/json; charset=utf-8
-6 < cache-control: no-cache
-6 < content-length: 14
-6 < date: Mon, 04 Oct 2021 10:42:53 GMT
-{"value":null}
-16:12:53.650 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-7 > POST http://localhost:4444/session/25ebe06a-6fe0-4849-9c0e-98cb7a3693ec/execute/sync
-7 > Content-Type: application/json; charset=UTF-8
-7 > Content-Length: 77
-7 > Host: localhost:4444
-7 > Connection: Keep-Alive
-7 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-7 > Accept-Encoding: gzip,deflate
-{"script":"return (document.querySelector(\"#password\") != null)","args":[]}
-
-16:12:53.658 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 8
-7 < 200
-7 < content-type: application/json; charset=utf-8
-7 < cache-control: no-cache
-7 < content-length: 14
-7 < date: Mon, 04 Oct 2021 10:42:53 GMT
-{"value":true}
-16:12:53.665 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-8 > POST http://localhost:4444/session/25ebe06a-6fe0-4849-9c0e-98cb7a3693ec/element
-8 > Content-Type: application/json; charset=UTF-8
-8 > Content-Length: 53
-8 > Host: localhost:4444
-8 > Connection: Keep-Alive
-8 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-8 > Accept-Encoding: gzip,deflate
-{"using":"css selector","value":"input[id=password]"}
-
-16:12:53.672 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 6
-8 < 200
-8 < content-type: application/json; charset=utf-8
-8 < cache-control: no-cache
-8 < content-length: 88
-8 < date: Mon, 04 Oct 2021 10:42:53 GMT
-{"value":{"element-6066-11e4-a52e-4f735466cecf":"2183ece5-1804-4446-b572-2191ffc68f2c"}}
-16:12:53.676 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-9 > POST http://localhost:4444/session/25ebe06a-6fe0-4849-9c0e-98cb7a3693ec/element/2183ece5-1804-4446-b572-2191ffc68f2c/value
-9 > Content-Type: application/json; charset=UTF-8
-9 > Content-Length: 23
-9 > Host: localhost:4444
-9 > Connection: Keep-Alive
-9 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-9 > Accept-Encoding: gzip,deflate
-{"text":"secret_sauce"}
-
-16:12:53.735 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 2514
-6 < 200
-6 < content-type: application/json; charset=utf-8
-6 < cache-control: no-cache
-6 < content-length: 14
-6 < date: Mon, 04 Oct 2021 10:42:51 GMT
-{"value":null}
-16:12:53.738 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - closing command: geckodriver_1633344149520
-16:12:53.779 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 103
-9 < 200
-9 < content-type: application/json; charset=utf-8
-9 < cache-control: no-cache
-9 < content-length: 14
-9 < date: Mon, 04 Oct 2021 10:42:53 GMT
-{"value":null}
-16:12:53.785 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-10 > POST http://localhost:4444/session/25ebe06a-6fe0-4849-9c0e-98cb7a3693ec/execute/sync
-10 > Content-Type: application/json; charset=UTF-8
-10 > Content-Length: 81
-10 > Host: localhost:4444
-10 > Connection: Keep-Alive
-10 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-10 > Accept-Encoding: gzip,deflate
-{"script":"return (document.querySelector(\"#login-button\") != null)","args":[]}
-
-16:12:53.793 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 8
-10 < 200
-10 < content-type: application/json; charset=utf-8
-10 < cache-control: no-cache
-10 < content-length: 14
-10 < date: Mon, 04 Oct 2021 10:42:53 GMT
-{"value":true}
-16:12:53.802 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-11 > POST http://localhost:4444/session/25ebe06a-6fe0-4849-9c0e-98cb7a3693ec/execute/sync
-11 > Content-Type: application/json; charset=UTF-8
-11 > Content-Length: 88
-11 > Host: localhost:4444
-11 > Connection: Keep-Alive
-11 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-11 > Accept-Encoding: gzip,deflate
-{"script":"return document.querySelector(\"input[id=login-button]\").click()","args":[]}
-
-16:12:53.827 [geckodriver_1633344149520] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/examples/users/geckodriver.exe, --port=56980] working dir: target\geckodriver_1633344149520
-16:12:53.901 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 2002
-6 < 200
-6 < content-type: application/json; charset=utf-8
-6 < cache-control: no-cache
-6 < content-length: 14
-6 < date: Mon, 04 Oct 2021 10:42:51 GMT
-{"value":null}
-16:12:53.903 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - closing command: geckodriver_1633344149513
-16:12:53.958 [geckodriver_1633344149513] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/examples/users/geckodriver.exe, --port=56981] working dir: target\geckodriver_1633344149513
-16:12:54.140 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 6648
-2 < 200
-2 < content-type: application/json; charset=utf-8
-2 < cache-control: no-cache
-2 < content-length: 14
-2 < date: Mon, 04 Oct 2021 10:42:47 GMT
-{"value":null}
-16:12:54.147 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-3 > POST http://localhost:56982/session/2af135c1-265e-48fb-a32f-e0a82e9dfa18/window/maximize
-3 > Content-Type: application/json; charset=UTF-8
-3 > Content-Length: 2
-3 > Host: localhost:56982
-3 > Connection: Keep-Alive
-3 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-3 > Accept-Encoding: gzip,deflate
-{}
-
-16:12:54.158 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 11
-3 < 200
-3 < content-type: application/json; charset=utf-8
-3 < cache-control: no-cache
-3 < content-length: 51
-3 < date: Mon, 04 Oct 2021 10:42:54 GMT
-{"value":{"x":-8,"y":-8,"width":1382,"height":744}}
-16:12:54.163 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-4 > POST http://localhost:56982/session/2af135c1-265e-48fb-a32f-e0a82e9dfa18/execute/sync
-4 > Content-Type: application/json; charset=UTF-8
-4 > Content-Length: 78
-4 > Host: localhost:56982
-4 > Connection: Keep-Alive
-4 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-4 > Accept-Encoding: gzip,deflate
-{"script":"return (document.querySelector(\"#user-name\") != null)","args":[]}
-
-16:12:54.187 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 22
-4 < 200
-4 < content-type: application/json; charset=utf-8
-4 < cache-control: no-cache
-4 < content-length: 14
-4 < date: Mon, 04 Oct 2021 10:42:54 GMT
-{"value":true}
-16:12:54.192 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-5 > POST http://localhost:56982/session/2af135c1-265e-48fb-a32f-e0a82e9dfa18/element
-5 > Content-Type: application/json; charset=UTF-8
-5 > Content-Length: 54
-5 > Host: localhost:56982
-5 > Connection: Keep-Alive
-5 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-5 > Accept-Encoding: gzip,deflate
-{"using":"css selector","value":"input[id=user-name]"}
-
-16:12:54.204 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 12
-5 < 200
-5 < content-type: application/json; charset=utf-8
-5 < cache-control: no-cache
-5 < content-length: 88
-5 < date: Mon, 04 Oct 2021 10:42:54 GMT
-{"value":{"element-6066-11e4-a52e-4f735466cecf":"a6e3a8e0-d15e-499e-b275-3f83e35f477a"}}
-16:12:54.208 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-6 > POST http://localhost:56982/session/2af135c1-265e-48fb-a32f-e0a82e9dfa18/element/a6e3a8e0-d15e-499e-b275-3f83e35f477a/value
-6 > Content-Type: application/json; charset=UTF-8
-6 > Content-Length: 24
-6 > Host: localhost:56982
-6 > Connection: Keep-Alive
-6 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-6 > Accept-Encoding: gzip,deflate
-{"text":"standard_user"}
-
-16:12:54.276 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 68
-6 < 200
-6 < content-type: application/json; charset=utf-8
-6 < cache-control: no-cache
-6 < content-length: 14
-6 < date: Mon, 04 Oct 2021 10:42:54 GMT
-{"value":null}
-16:12:54.283 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-7 > POST http://localhost:56982/session/2af135c1-265e-48fb-a32f-e0a82e9dfa18/execute/sync
-7 > Content-Type: application/json; charset=UTF-8
-7 > Content-Length: 77
-7 > Host: localhost:56982
-7 > Connection: Keep-Alive
-7 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-7 > Accept-Encoding: gzip,deflate
-{"script":"return (document.querySelector(\"#password\") != null)","args":[]}
-
-16:12:54.292 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 8
-7 < 200
-7 < content-type: application/json; charset=utf-8
-7 < cache-control: no-cache
-7 < content-length: 14
-7 < date: Mon, 04 Oct 2021 10:42:54 GMT
-{"value":true}
-16:12:54.300 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-8 > POST http://localhost:56982/session/2af135c1-265e-48fb-a32f-e0a82e9dfa18/element
-8 > Content-Type: application/json; charset=UTF-8
-8 > Content-Length: 53
-8 > Host: localhost:56982
-8 > Connection: Keep-Alive
-8 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-8 > Accept-Encoding: gzip,deflate
-{"using":"css selector","value":"input[id=password]"}
-
-16:12:55.268 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 968
-8 < 200
-8 < content-type: application/json; charset=utf-8
-8 < cache-control: no-cache
-8 < content-length: 88
-8 < date: Mon, 04 Oct 2021 10:42:54 GMT
-{"value":{"element-6066-11e4-a52e-4f735466cecf":"2ee05acc-d18d-43ea-a829-8ad1e741f982"}}
-16:12:55.277 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-9 > POST http://localhost:56982/session/2af135c1-265e-48fb-a32f-e0a82e9dfa18/element/2ee05acc-d18d-43ea-a829-8ad1e741f982/value
-9 > Content-Type: application/json; charset=UTF-8
-9 > Content-Length: 23
-9 > Host: localhost:56982
-9 > Connection: Keep-Alive
-9 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-9 > Accept-Encoding: gzip,deflate
-{"text":"secret_sauce"}
-
-16:12:55.463 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 185
-9 < 200
-9 < content-type: application/json; charset=utf-8
-9 < cache-control: no-cache
-9 < content-length: 14
-9 < date: Mon, 04 Oct 2021 10:42:55 GMT
-{"value":null}
-16:12:55.472 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-10 > POST http://localhost:56982/session/2af135c1-265e-48fb-a32f-e0a82e9dfa18/execute/sync
-10 > Content-Type: application/json; charset=UTF-8
-10 > Content-Length: 81
-10 > Host: localhost:56982
-10 > Connection: Keep-Alive
-10 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-10 > Accept-Encoding: gzip,deflate
-{"script":"return (document.querySelector(\"#login-button\") != null)","args":[]}
-
-16:12:55.515 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 43
-10 < 200
-10 < content-type: application/json; charset=utf-8
-10 < cache-control: no-cache
-10 < content-length: 14
-10 < date: Mon, 04 Oct 2021 10:42:55 GMT
-{"value":true}
-16:12:55.524 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-11 > POST http://localhost:56982/session/2af135c1-265e-48fb-a32f-e0a82e9dfa18/execute/sync
-11 > Content-Type: application/json; charset=UTF-8
-11 > Content-Length: 88
-11 > Host: localhost:56982
-11 > Connection: Keep-Alive
-11 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-11 > Accept-Encoding: gzip,deflate
-{"script":"return document.querySelector(\"input[id=login-button]\").click()","args":[]}
-
-16:12:55.749 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1947
-11 < 200
-11 < content-type: application/json; charset=utf-8
-11 < cache-control: no-cache
-11 < content-length: 14
-11 < date: Mon, 04 Oct 2021 10:42:53 GMT
-{"value":null}
-16:12:55.817 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-12 > POST http://localhost:4444/session/25ebe06a-6fe0-4849-9c0e-98cb7a3693ec/execute/sync
-12 > Content-Type: application/json; charset=UTF-8
-12 > Content-Length: 87
-12 > Host: localhost:4444
-12 > Connection: Keep-Alive
-12 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-12 > Accept-Encoding: gzip,deflate
-{"script":"return (document.querySelector(\".shopping_cart_link\") != null)","args":[]}
-
-16:12:55.876 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 58
-12 < 200
-12 < content-type: application/json; charset=utf-8
-12 < cache-control: no-cache
-12 < content-length: 14
-12 < date: Mon, 04 Oct 2021 10:42:55 GMT
-{"value":true}
-16:12:55.881 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-13 > POST http://localhost:4444/session/25ebe06a-6fe0-4849-9c0e-98cb7a3693ec/execute/sync
-13 > Content-Type: application/json; charset=UTF-8
-13 > Content-Length: 85
-13 > Host: localhost:4444
-13 > Connection: Keep-Alive
-13 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-13 > Accept-Encoding: gzip,deflate
-{"script":"return document.querySelector(\".shopping_cart_link\") != null","args":[]}
-
-16:12:55.975 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 94
-13 < 200
-13 < content-type: application/json; charset=utf-8
-13 < cache-control: no-cache
-13 < content-length: 14
-13 < date: Mon, 04 Oct 2021 10:42:55 GMT
-{"value":true}
-16:12:55.979 [pool-1-thread-2] DEBUG com.intuit.karate - request:
-14 > DELETE http://localhost:4444/session/25ebe06a-6fe0-4849-9c0e-98cb7a3693ec
-14 > Host: localhost:4444
-14 > Connection: Keep-Alive
-14 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-14 > Accept-Encoding: gzip,deflate
-
-
-16:12:55.983 [geckodriver_1633344149511-out] DEBUG c.i.k.d.geckodriver_1633344149511 - 1633344175984	Marionette	INFO	Stopped listening on port 56993
-16:12:56.107 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 583
-11 < 200
-11 < content-type: application/json; charset=utf-8
-11 < cache-control: no-cache
-11 < content-length: 14
-11 < date: Mon, 04 Oct 2021 10:42:55 GMT
-{"value":null}
-16:12:56.145 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-12 > POST http://localhost:56982/session/2af135c1-265e-48fb-a32f-e0a82e9dfa18/execute/sync
-12 > Content-Type: application/json; charset=UTF-8
-12 > Content-Length: 74
-12 > Host: localhost:56982
-12 > Connection: Keep-Alive
-12 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-12 > Accept-Encoding: gzip,deflate
-{"script":"return (document.querySelector(\".title\") != null)","args":[]}
-
-16:12:56.191 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 45
-12 < 200
-12 < content-type: application/json; charset=utf-8
-12 < cache-control: no-cache
-12 < content-length: 14
-12 < date: Mon, 04 Oct 2021 10:42:56 GMT
-{"value":true}
-16:12:56.198 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-13 > POST http://localhost:56982/session/2af135c1-265e-48fb-a32f-e0a82e9dfa18/execute/sync
-13 > Content-Type: application/json; charset=UTF-8
-13 > Content-Length: 72
-13 > Host: localhost:56982
-13 > Connection: Keep-Alive
-13 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-13 > Accept-Encoding: gzip,deflate
-{"script":"return document.querySelector(\".title\") != null","args":[]}
-
-16:12:56.247 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 48
-13 < 200
-13 < content-type: application/json; charset=utf-8
-13 < cache-control: no-cache
-13 < content-length: 14
-13 < date: Mon, 04 Oct 2021 10:42:56 GMT
-{"value":true}
-16:12:56.255 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-14 > POST http://localhost:56982/session/2af135c1-265e-48fb-a32f-e0a82e9dfa18/execute/sync
-14 > Content-Type: application/json; charset=UTF-8
-14 > Content-Length: 76
-14 > Host: localhost:56982
-14 > Connection: Keep-Alive
-14 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-14 > Accept-Encoding: gzip,deflate
-{"script":"return document.querySelector(\".title\").textContent","args":[]}
-
-16:12:56.276 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 21
-14 < 200
-14 < content-type: application/json; charset=utf-8
-14 < cache-control: no-cache
-14 < content-length: 20
-14 < date: Mon, 04 Oct 2021 10:42:56 GMT
-{"value":"Products"}
-16:12:56.280 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-15 > DELETE http://localhost:56982/session/2af135c1-265e-48fb-a32f-e0a82e9dfa18
-15 > Host: localhost:56982
-15 > Connection: Keep-Alive
-15 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-15 > Accept-Encoding: gzip,deflate
-
-
-16:12:56.287 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - 1633344176288	Marionette	INFO	Stopped listening on port 56994
-16:12:56.619 [geckodriver_1633344149511-out] DEBUG c.i.k.d.geckodriver_1633344149511 - JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
-16:12:56.668 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
-16:12:57.534 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\cyril\AppData\Local\Temp\rust_mozprofileipB2rV\protections.sqlite
-16:12:57.563 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - 
-16:12:57.563 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - ###!!! [Child][MessageChannel] Error: (msgtype=0x690023,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
-16:12:57.563 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - 
-16:12:57.582 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - 
-16:12:57.582 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-16:12:57.582 [geckodriver_1633344149513-out] DEBUG c.i.k.d.geckodriver_1633344149513 - 
-16:12:59.850 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 3871
-14 < 200
-14 < content-type: application/json; charset=utf-8
-14 < cache-control: no-cache
-14 < content-length: 14
-14 < date: Mon, 04 Oct 2021 10:42:55 GMT
-{"value":null}
-16:12:59.850 [pool-1-thread-2] DEBUG com.intuit.karate.shell.Command - closing command: geckodriver_1633344149511
-16:12:59.855 [geckodriver_1633344149511] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/examples/users/geckodriver.exe, --port=4444] working dir: target\geckodriver_1633344149511
-16:12:59.941 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 3661
-15 < 200
-15 < content-type: application/json; charset=utf-8
-15 < cache-control: no-cache
-15 < content-length: 14
-15 < date: Mon, 04 Oct 2021 10:42:56 GMT
-{"value":null}
-16:12:59.942 [pool-1-thread-1] DEBUG com.intuit.karate.shell.Command - closing command: geckodriver_1633344149513
-16:12:59.958 [geckodriver_1633344149513] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/examples/users/geckodriver.exe, --port=56982] working dir: target\geckodriver_1633344149513
-16:13:01.766 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 4 (3 remaining) classpath:examples/users/home.feature
-16:13:01.916 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:examples/users/login.feature
+19:56:09.892 [pool-1-thread-4] DEBUG c.i.k.driver.chrome_1633357554958 - root frame id: 0D2D9AA2CA4839B7733D4263D52DEFA1
+19:56:12.417 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client connected
+19:56:12.417 [nioEventLoopGroup-3-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client connected
+19:56:12.417 [nioEventLoopGroup-4-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client connected
+19:56:12.436 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1633357554974 - >> {"id":1,"method":"Target.attachToTarget","params":{"targetId":"F403A22DBADDD741191DFE4787993B20","flatten":true}}
+19:56:12.437 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":1,"method":"Target.attachToTarget","params":{"targetId":"1FC502EEDEE8A835E37A429A36C8E5D0","flatten":true}}
+19:56:12.439 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":1,"method":"Target.attachToTarget","params":{"targetId":"BB109327197F8EF7F53E4DC524DFEE22","flatten":true}}
+19:56:12.513 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"method":"Target.attachedToTarget","params":{"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","targetInfo":{"targetId":"BB109327197F8EF7F53E4DC524DFEE22","type":"page","title":"Welcome to Chrome","url":"chrome://welcome/","attached":true,"canAccessOpener":false,"browserContextId":"F2A82DF821D50488BDB1C8BFA41E0DB6"},"waitingForDebugger":false}}
+19:56:12.516 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":1,"result":{"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}}
+19:56:12.519 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":2,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Target.activateTarget","params":{"targetId":"BB109327197F8EF7F53E4DC524DFEE22"}}
+19:56:12.524 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":2,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:12.531 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":3,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Page.enable"}
+19:56:12.542 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":3,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:12.549 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":4,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Runtime.enable"}
+19:56:12.557 [nioEventLoopGroup-5-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client connected
+19:56:12.558 [pool-1-thread-4] DEBUG c.i.k.driver.chrome_1633357554958 - >> {"id":1,"method":"Target.attachToTarget","params":{"targetId":"0D2D9AA2CA4839B7733D4263D52DEFA1","flatten":true}}
+19:56:12.568 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"chrome://welcome","name":"","uniqueId":"7903734725453156630.-3536208312951812381","auxData":{"isDefault":true,"type":"default","frameId":"BB109327197F8EF7F53E4DC524DFEE22"}}},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:12.573 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":4,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:12.586 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":5,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Browser.getWindowForTarget","params":{"targetId":"BB109327197F8EF7F53E4DC524DFEE22"}}
+19:56:12.591 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":5,"result":{"windowId":1,"bounds":{"left":10,"top":10,"width":1050,"height":708,"windowState":"normal"}},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:12.594 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"method":"Target.attachedToTarget","params":{"sessionId":"2E10114DA8314FE5B9717824F70828CA","targetInfo":{"targetId":"F403A22DBADDD741191DFE4787993B20","type":"page","title":"Welcome to Chrome","url":"chrome://welcome/","attached":true,"canAccessOpener":false,"browserContextId":"5FA9C38EFB766A624EE3501BB1B4AFEA"},"waitingForDebugger":false}}
+19:56:12.596 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"id":1,"result":{"sessionId":"2E10114DA8314FE5B9717824F70828CA"}}
+19:56:12.603 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1633357554974 - >> {"id":2,"sessionId":"2E10114DA8314FE5B9717824F70828CA","method":"Target.activateTarget","params":{"targetId":"F403A22DBADDD741191DFE4787993B20"}}
+19:56:12.632 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"id":2,"result":{},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:12.637 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1633357554974 - >> {"id":3,"sessionId":"2E10114DA8314FE5B9717824F70828CA","method":"Page.enable"}
+19:56:12.665 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"method":"Target.attachedToTarget","params":{"sessionId":"1B692752C80DF722726CB18B5B958AD2","targetInfo":{"targetId":"1FC502EEDEE8A835E37A429A36C8E5D0","type":"page","title":"Welcome to Chrome","url":"chrome://welcome/","attached":true,"canAccessOpener":false,"browserContextId":"EECF1AA5024E4CCFBA3269E5B299F9A0"},"waitingForDebugger":false}}
+19:56:12.667 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":1,"result":{"sessionId":"1B692752C80DF722726CB18B5B958AD2"}}
+19:56:12.673 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":2,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Target.activateTarget","params":{"targetId":"1FC502EEDEE8A835E37A429A36C8E5D0"}}
+19:56:12.699 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":2,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:12.701 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":3,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Page.enable"}
+19:56:12.706 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"method":"Target.attachedToTarget","params":{"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE","targetInfo":{"targetId":"0D2D9AA2CA4839B7733D4263D52DEFA1","type":"page","title":"Welcome to Chrome","url":"chrome://welcome/","attached":true,"canAccessOpener":false,"browserContextId":"1E3CE3B959E5A9DE61B5D5E80506DBE8"},"waitingForDebugger":false}}
+19:56:12.711 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"id":1,"result":{"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}}
+19:56:12.715 [pool-1-thread-4] DEBUG c.i.k.driver.chrome_1633357554958 - >> {"id":2,"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE","method":"Target.activateTarget","params":{"targetId":"0D2D9AA2CA4839B7733D4263D52DEFA1"}}
+19:56:12.815 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"id":2,"result":{},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:12.816 [pool-1-thread-4] DEBUG c.i.k.driver.chrome_1633357554958 - >> {"id":3,"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE","method":"Page.enable"}
+19:56:13.116 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":6,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Page.navigate","params":{"url":"https:\/\/www.saucedemo.com\/"}}
+19:56:13.788 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":3,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:13.789 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":4,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Runtime.enable"}
+19:56:13.809 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"chrome://welcome","name":"","uniqueId":"-1620072185874687985.1742723912632559291","auxData":{"isDefault":true,"type":"default","frameId":"1FC502EEDEE8A835E37A429A36C8E5D0"}}},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:13.810 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":4,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:13.813 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":5,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Browser.getWindowForTarget","params":{"targetId":"1FC502EEDEE8A835E37A429A36C8E5D0"}}
+19:56:13.819 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":5,"result":{"windowId":1,"bounds":{"left":10,"top":10,"width":1050,"height":708,"windowState":"normal"}},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:14.041 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":6,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Page.navigate","params":{"url":"https:\/\/www.saucedemo.com\/"}}
+19:56:15.209 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":6,"result":{"frameId":"BB109327197F8EF7F53E4DC524DFEE22","loaderId":"72E93F814006FA47BF124D64209D7A6B"},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:15.240 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:15.243 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"method":"Page.frameStartedLoading","params":{"frameId":"BB109327197F8EF7F53E4DC524DFEE22"},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:15.286 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:15.288 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"method":"Page.frameNavigated","params":{"frame":{"id":"BB109327197F8EF7F53E4DC524DFEE22","loaderId":"72E93F814006FA47BF124D64209D7A6B","url":"https://www.saucedemo.com/","domainAndRegistry":"saucedemo.com","securityOrigin":"https://www.saucedemo.com","mimeType":"text/html","adFrameStatus":{"adFrameType":"none"},"secureContextType":"Secure","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":[]},"type":"Navigation"},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:15.291 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"https://www.saucedemo.com","name":"","uniqueId":"-1876952887308023848.-3354832320018299597","auxData":{"isDefault":true,"type":"default","frameId":"BB109327197F8EF7F53E4DC524DFEE22"}}},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:15.590 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":6,"result":{"frameId":"1FC502EEDEE8A835E37A429A36C8E5D0","loaderId":"523463D311FDC7C936E9E64E7B1D0F74"},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:15.912 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"id":3,"result":{},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:15.913 [pool-1-thread-4] DEBUG c.i.k.driver.chrome_1633357554958 - >> {"id":4,"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE","method":"Runtime.enable"}
+19:56:15.925 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"chrome://welcome","name":"","uniqueId":"2599348064250121529.8742137929093725087","auxData":{"isDefault":true,"type":"default","frameId":"0D2D9AA2CA4839B7733D4263D52DEFA1"}}},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:15.930 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"id":4,"result":{},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:15.932 [pool-1-thread-4] DEBUG c.i.k.driver.chrome_1633357554958 - >> {"id":5,"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE","method":"Browser.getWindowForTarget","params":{"targetId":"0D2D9AA2CA4839B7733D4263D52DEFA1"}}
+19:56:15.934 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"id":5,"result":{"windowId":1,"bounds":{"left":10,"top":10,"width":1050,"height":708,"windowState":"normal"}},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:16.055 [pool-1-thread-4] DEBUG c.i.k.driver.chrome_1633357554958 - >> {"id":6,"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE","method":"Page.navigate","params":{"url":"https:\/\/www.saucedemo.com\/"}}
+19:56:16.190 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"id":3,"result":{},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:16.190 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1633357554974 - >> {"id":4,"sessionId":"2E10114DA8314FE5B9717824F70828CA","method":"Runtime.enable"}
+19:56:16.195 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"chrome://welcome","name":"","uniqueId":"-4264842123904413691.-5836530810376718259","auxData":{"isDefault":true,"type":"default","frameId":"F403A22DBADDD741191DFE4787993B20"}}},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:16.196 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"id":4,"result":{},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:16.199 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1633357554974 - >> {"id":5,"sessionId":"2E10114DA8314FE5B9717824F70828CA","method":"Browser.getWindowForTarget","params":{"targetId":"F403A22DBADDD741191DFE4787993B20"}}
+19:56:16.204 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"id":5,"result":{"windowId":1,"bounds":{"left":10,"top":10,"width":1050,"height":708,"windowState":"normal"}},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:16.318 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1633357554974 - >> {"id":6,"sessionId":"2E10114DA8314FE5B9717824F70828CA","method":"Page.navigate","params":{"url":"https:\/\/www.saucedemo.com\/"}}
+19:56:16.876 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:16.906 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"method":"Page.frameStartedLoading","params":{"frameId":"1FC502EEDEE8A835E37A429A36C8E5D0"},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:16.908 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:16.911 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"method":"Page.frameNavigated","params":{"frame":{"id":"1FC502EEDEE8A835E37A429A36C8E5D0","loaderId":"523463D311FDC7C936E9E64E7B1D0F74","url":"https://www.saucedemo.com/","domainAndRegistry":"saucedemo.com","securityOrigin":"https://www.saucedemo.com","mimeType":"text/html","adFrameStatus":{"adFrameType":"none"},"secureContextType":"Secure","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":[]},"type":"Navigation"},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:16.915 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"https://www.saucedemo.com","name":"","uniqueId":"1329694857933452688.-2356566365609516747","auxData":{"isDefault":true,"type":"default","frameId":"1FC502EEDEE8A835E37A429A36C8E5D0"}}},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:17.764 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"id":6,"result":{"frameId":"0D2D9AA2CA4839B7733D4263D52DEFA1","loaderId":"80580B2BF2BF95AF4182BDE34839BACF"},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:17.774 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:17.776 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"method":"Page.frameStartedLoading","params":{"frameId":"0D2D9AA2CA4839B7733D4263D52DEFA1"},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:17.801 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:17.834 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"method":"Page.frameNavigated","params":{"frame":{"id":"0D2D9AA2CA4839B7733D4263D52DEFA1","loaderId":"80580B2BF2BF95AF4182BDE34839BACF","url":"https://www.saucedemo.com/","domainAndRegistry":"saucedemo.com","securityOrigin":"https://www.saucedemo.com","mimeType":"text/html","adFrameStatus":{"adFrameType":"none"},"secureContextType":"Secure","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":[]},"type":"Navigation"},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:17.850 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"https://www.saucedemo.com","name":"","uniqueId":"6668571321086109868.-4024748738419378251","auxData":{"isDefault":true,"type":"default","frameId":"0D2D9AA2CA4839B7733D4263D52DEFA1"}}},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:18.007 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"id":6,"result":{"frameId":"F403A22DBADDD741191DFE4787993B20","loaderId":"4114B99F4158F0E5808AF6681F1EABEB"},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:18.008 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:18.009 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"method":"Page.frameStartedLoading","params":{"frameId":"F403A22DBADDD741191DFE4787993B20"},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:18.027 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:18.036 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"method":"Page.frameNavigated","params":{"frame":{"id":"F403A22DBADDD741191DFE4787993B20","loaderId":"4114B99F4158F0E5808AF6681F1EABEB","url":"https://www.saucedemo.com/","domainAndRegistry":"saucedemo.com","securityOrigin":"https://www.saucedemo.com","mimeType":"text/html","adFrameStatus":{"adFrameType":"none"},"secureContextType":"Secure","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":[]},"type":"Navigation"},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:18.041 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"https://www.saucedemo.com","name":"","uniqueId":"7385602183550655521.361411199480936772","auxData":{"isDefault":true,"type":"default","frameId":"F403A22DBADDD741191DFE4787993B20"}}},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:18.588 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"method":"Page.domContentEventFired","params":{"timestamp":38378.219914},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.631 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":7,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Browser.setWindowBounds","params":{"windowId":1,"bounds":{"windowState":"maximized"}}}
+19:56:18.656 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":7,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.665 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"method":"Page.frameResized","params":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.695 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"method":"Page.frameResized","params":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.710 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":8,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Runtime.evaluate","params":{"expression":"(document.querySelector(\"#user-name\") != null)","returnByValue":true}}
+19:56:18.718 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":8,"result":{"result":{"type":"boolean","value":true}},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.735 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":9,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Runtime.evaluate","params":{"expression":"var e = document.querySelector(\"input[id=user-name]\"); e.focus(); try { e.selectionStart = e.selectionEnd = e.value.length } catch(x) {}","returnByValue":true}}
+19:56:18.741 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":9,"result":{"result":{"type":"number","value":0,"description":"0"}},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.747 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":10,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"s","windowsVirtualKeyCode":83}}
+19:56:18.757 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":10,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.773 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":11,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"s","windowsVirtualKeyCode":83}}
+19:56:18.803 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":11,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.806 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":12,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"s","windowsVirtualKeyCode":83}}
+19:56:18.817 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":12,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.819 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":13,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"t","windowsVirtualKeyCode":84}}
+19:56:18.822 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":13,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.825 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":14,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"t","windowsVirtualKeyCode":84}}
+19:56:18.836 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":14,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.839 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":15,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"t","windowsVirtualKeyCode":84}}
+19:56:18.842 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":15,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.849 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":16,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"a","windowsVirtualKeyCode":65}}
+19:56:18.852 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":16,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.853 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":17,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"a","windowsVirtualKeyCode":65}}
+19:56:18.868 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":17,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.871 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":18,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"a","windowsVirtualKeyCode":65}}
+19:56:18.875 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":18,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.886 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":19,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"n","windowsVirtualKeyCode":78}}
+19:56:18.890 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":19,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.892 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":20,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"n","windowsVirtualKeyCode":78}}
+19:56:18.904 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":20,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.906 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":21,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"n","windowsVirtualKeyCode":78}}
+19:56:18.909 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":21,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.915 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":22,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"d","windowsVirtualKeyCode":68}}
+19:56:18.918 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":22,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.925 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":23,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"d","windowsVirtualKeyCode":68}}
+19:56:18.936 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":23,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.941 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":24,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"d","windowsVirtualKeyCode":68}}
+19:56:18.945 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":24,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.951 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":25,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"a","windowsVirtualKeyCode":65}}
+19:56:18.955 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":25,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.958 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":26,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"a","windowsVirtualKeyCode":65}}
+19:56:18.986 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":26,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.988 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":27,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"a","windowsVirtualKeyCode":65}}
+19:56:18.992 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":27,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:18.997 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":28,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"r","windowsVirtualKeyCode":82}}
+19:56:19.000 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":28,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.001 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":29,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"r","windowsVirtualKeyCode":82}}
+19:56:19.007 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":29,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.015 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":30,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"r","windowsVirtualKeyCode":82}}
+19:56:19.017 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":30,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.019 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":31,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"d","windowsVirtualKeyCode":68}}
+19:56:19.022 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":31,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.023 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":32,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"d","windowsVirtualKeyCode":68}}
+19:56:19.030 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":32,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.033 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":33,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"d","windowsVirtualKeyCode":68}}
+19:56:19.036 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":33,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.037 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":34,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"_","windowsVirtualKeyCode":523}}
+19:56:19.040 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":34,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.041 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":35,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"_","windowsVirtualKeyCode":523}}
+19:56:19.058 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":35,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.065 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":36,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"_","windowsVirtualKeyCode":523}}
+19:56:19.069 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":36,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.073 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":37,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"u","windowsVirtualKeyCode":85}}
+19:56:19.082 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":37,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.085 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":38,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"u","windowsVirtualKeyCode":85}}
+19:56:19.092 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":38,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.098 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":39,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"u","windowsVirtualKeyCode":85}}
+19:56:19.102 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":39,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.104 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":40,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"s","windowsVirtualKeyCode":83}}
+19:56:19.107 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":40,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.108 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":41,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"s","windowsVirtualKeyCode":83}}
+19:56:19.116 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":41,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.119 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":42,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"s","windowsVirtualKeyCode":83}}
+19:56:19.127 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":42,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.131 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":43,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"e","windowsVirtualKeyCode":69}}
+19:56:19.139 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":43,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.141 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":44,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"e","windowsVirtualKeyCode":69}}
+19:56:19.147 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":44,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.149 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":45,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"e","windowsVirtualKeyCode":69}}
+19:56:19.152 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":45,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.153 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":46,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"r","windowsVirtualKeyCode":82}}
+19:56:19.155 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":46,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.156 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":47,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"r","windowsVirtualKeyCode":82}}
+19:56:19.164 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":47,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.169 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":48,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"r","windowsVirtualKeyCode":82}}
+19:56:19.173 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":48,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.201 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":49,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Runtime.evaluate","params":{"expression":"(document.querySelector(\"#password\") != null)","returnByValue":true}}
+19:56:19.205 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":49,"result":{"result":{"type":"boolean","value":true}},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.208 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":50,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Runtime.evaluate","params":{"expression":"var e = document.querySelector(\"input[id=password]\"); e.focus(); try { e.selectionStart = e.selectionEnd = e.value.length } catch(x) {}","returnByValue":true}}
+19:56:19.222 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":50,"result":{"result":{"type":"number","value":0,"description":"0"}},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.236 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":51,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"s","windowsVirtualKeyCode":83}}
+19:56:19.240 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":51,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.241 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":52,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"s","windowsVirtualKeyCode":83}}
+19:56:19.252 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":52,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.255 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":53,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"s","windowsVirtualKeyCode":83}}
+19:56:19.258 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":53,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.259 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":54,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"e","windowsVirtualKeyCode":69}}
+19:56:19.264 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":54,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.267 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":55,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"e","windowsVirtualKeyCode":69}}
+19:56:19.273 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":55,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.277 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":56,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"e","windowsVirtualKeyCode":69}}
+19:56:19.283 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":56,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.284 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":57,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"c","windowsVirtualKeyCode":67}}
+19:56:19.288 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":57,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.289 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":58,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"c","windowsVirtualKeyCode":67}}
+19:56:19.305 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":58,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.307 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":59,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"c","windowsVirtualKeyCode":67}}
+19:56:19.318 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":59,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.319 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":60,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"r","windowsVirtualKeyCode":82}}
+19:56:19.323 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":60,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.324 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":61,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"r","windowsVirtualKeyCode":82}}
+19:56:19.337 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":61,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.338 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":62,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"r","windowsVirtualKeyCode":82}}
+19:56:19.340 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":62,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.341 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":63,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"e","windowsVirtualKeyCode":69}}
+19:56:19.344 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":63,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.346 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":64,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"e","windowsVirtualKeyCode":69}}
+19:56:19.355 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":64,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.356 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":65,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"e","windowsVirtualKeyCode":69}}
+19:56:19.359 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":65,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.365 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":66,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"t","windowsVirtualKeyCode":84}}
+19:56:19.368 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":66,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.371 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":67,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"t","windowsVirtualKeyCode":84}}
+19:56:19.379 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":67,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.402 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":68,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"t","windowsVirtualKeyCode":84}}
+19:56:19.411 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":68,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.415 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":69,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"_","windowsVirtualKeyCode":523}}
+19:56:19.418 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":69,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.419 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":70,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"_","windowsVirtualKeyCode":523}}
+19:56:19.430 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":70,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.473 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":71,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"_","windowsVirtualKeyCode":523}}
+19:56:19.476 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":71,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.492 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":72,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"s","windowsVirtualKeyCode":83}}
+19:56:19.498 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":72,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.498 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":73,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"s","windowsVirtualKeyCode":83}}
+19:56:19.503 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":73,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.506 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":74,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"s","windowsVirtualKeyCode":83}}
+19:56:19.508 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":74,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.509 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":75,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"a","windowsVirtualKeyCode":65}}
+19:56:19.512 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":75,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.515 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":76,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"a","windowsVirtualKeyCode":65}}
+19:56:19.520 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":76,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.523 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":77,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"a","windowsVirtualKeyCode":65}}
+19:56:19.525 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":77,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.526 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":78,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"u","windowsVirtualKeyCode":85}}
+19:56:19.528 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":78,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.532 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":79,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"u","windowsVirtualKeyCode":85}}
+19:56:19.554 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":79,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.556 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":80,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"u","windowsVirtualKeyCode":85}}
+19:56:19.568 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":80,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.570 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":81,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"c","windowsVirtualKeyCode":67}}
+19:56:19.578 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":81,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.580 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":82,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"c","windowsVirtualKeyCode":67}}
+19:56:19.592 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":82,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.597 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":83,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"c","windowsVirtualKeyCode":67}}
+19:56:19.600 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":83,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.602 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":84,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"e","windowsVirtualKeyCode":69}}
+19:56:19.603 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":84,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.604 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":85,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"e","windowsVirtualKeyCode":69}}
+19:56:19.618 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":85,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.619 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":86,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"e","windowsVirtualKeyCode":69}}
+19:56:19.623 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":86,"result":{},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.626 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":87,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Runtime.evaluate","params":{"expression":"(document.querySelector(\"#login-button\") != null)","returnByValue":true}}
+19:56:19.633 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":87,"result":{"result":{"type":"boolean","value":true}},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.643 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":88,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Runtime.evaluate","params":{"expression":"document.querySelector(\"input[id=login-button]\").click()","returnByValue":true}}
+19:56:19.781 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"method":"Page.navigatedWithinDocument","params":{"frameId":"BB109327197F8EF7F53E4DC524DFEE22","url":"https://www.saucedemo.com/inventory.html"},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.782 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":88,"result":{"result":{"type":"undefined"}},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.886 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":89,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Runtime.evaluate","params":{"expression":"(document.querySelector(\".title\") != null)","returnByValue":true}}
+19:56:19.968 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":89,"result":{"result":{"type":"boolean","value":true}},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:19.983 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":90,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Runtime.evaluate","params":{"expression":"document.querySelector(\".title\") != null","returnByValue":true}}
+19:56:19.986 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":90,"result":{"result":{"type":"boolean","value":true}},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:20.015 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":91,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Runtime.evaluate","params":{"expression":"document.querySelector(\".title\")['textContent']","returnByValue":true}}
+19:56:20.018 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":91,"result":{"result":{"type":"string","value":"Products"}},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:20.025 [pool-1-thread-1] DEBUG c.i.k.driver.chrome_1633357555099 - >> {"id":92,"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0","method":"Target.closeTarget","params":{"targetId":"BB109327197F8EF7F53E4DC524DFEE22"}}
+19:56:20.027 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1633357555099 - << {"id":92,"result":{"success":true},"sessionId":"92B83BEAB5E1DFAECBBC8A58E0AA32B0"}
+19:56:20.036 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client disconnected
+19:56:20.054 [pool-1-thread-1] DEBUG com.intuit.karate.shell.Command - closing command: chrome_1633357555099
+19:56:20.320 [chrome_1633357555099] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [C:\Program Files (x86)\Google\Chrome\Application\chrome.exe, --remote-debugging-port=50132, --no-first-run, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chrome_1633357555099, --disable-popup-blocking] working dir: target\chrome_1633357555099
+19:56:26.418 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"method":"Page.domContentEventFired","params":{"timestamp":38386.051772},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:26.420 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":7,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Browser.setWindowBounds","params":{"windowId":1,"bounds":{"windowState":"maximized"}}}
+19:56:27.510 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":7,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:27.521 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"method":"Page.loadEventFired","params":{"timestamp":38386.285816},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:27.524 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"method":"Page.frameStoppedLoading","params":{"frameId":"1FC502EEDEE8A835E37A429A36C8E5D0"},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:27.542 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":8,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Runtime.evaluate","params":{"expression":"(document.querySelector(\"#user-name\") != null)","returnByValue":true}}
+19:56:27.552 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"method":"Page.domContentEventFired","params":{"timestamp":38386.059868},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:27.560 [pool-1-thread-4] DEBUG c.i.k.driver.chrome_1633357554958 - >> {"id":7,"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE","method":"Browser.setWindowBounds","params":{"windowId":1,"bounds":{"windowState":"maximized"}}}
+19:56:27.581 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"method":"Page.domContentEventFired","params":{"timestamp":38386.060607},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:27.590 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1633357554974 - >> {"id":7,"sessionId":"2E10114DA8314FE5B9717824F70828CA","method":"Browser.setWindowBounds","params":{"windowId":1,"bounds":{"windowState":"maximized"}}}
+19:56:27.605 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"id":7,"result":{},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:27.706 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"id":7,"result":{},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:27.792 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1633357554974 - >> {"id":8,"sessionId":"2E10114DA8314FE5B9717824F70828CA","method":"Runtime.evaluate","params":{"expression":"(document.querySelector(\"#login-button\") != null)","returnByValue":true}}
+19:56:27.858 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"method":"Page.frameResized","params":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:27.859 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":8,"result":{"result":{"type":"boolean","value":true}},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:27.867 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":9,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Runtime.evaluate","params":{"expression":"var e = document.querySelector(\"input[id=user-name]\"); e.focus(); try { e.selectionStart = e.selectionEnd = e.value.length } catch(x) {}","returnByValue":true}}
+19:56:27.916 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":9,"result":{"result":{"type":"number","value":0,"description":"0"}},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:27.919 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":10,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"s","windowsVirtualKeyCode":83}}
+19:56:27.947 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":10,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:27.948 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":11,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"s","windowsVirtualKeyCode":83}}
+19:56:27.948 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"method":"Page.frameResized","params":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.003 [pool-1-thread-4] DEBUG c.i.k.driver.chrome_1633357554958 - >> {"id":8,"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE","method":"Runtime.evaluate","params":{"expression":"(document.querySelector(\".login_logo\") != null)","returnByValue":true}}
+19:56:28.021 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":11,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.022 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":12,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"s","windowsVirtualKeyCode":83}}
+19:56:28.024 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":12,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.025 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":13,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"t","windowsVirtualKeyCode":84}}
+19:56:28.030 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":13,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.031 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":14,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"t","windowsVirtualKeyCode":84}}
+19:56:28.038 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":14,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.039 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":15,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"t","windowsVirtualKeyCode":84}}
+19:56:28.041 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":15,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.046 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":16,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"a","windowsVirtualKeyCode":65}}
+19:56:28.050 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":16,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.051 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":17,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"a","windowsVirtualKeyCode":65}}
+19:56:28.063 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":17,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.065 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":18,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"a","windowsVirtualKeyCode":65}}
+19:56:28.068 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":18,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.068 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":19,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"n","windowsVirtualKeyCode":78}}
+19:56:28.071 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":19,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.072 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":20,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"n","windowsVirtualKeyCode":78}}
+19:56:28.077 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":20,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.080 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":21,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"n","windowsVirtualKeyCode":78}}
+19:56:28.083 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":21,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.084 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":22,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"d","windowsVirtualKeyCode":68}}
+19:56:28.086 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":22,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.087 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":23,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"d","windowsVirtualKeyCode":68}}
+19:56:28.092 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":23,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.093 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":24,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"d","windowsVirtualKeyCode":68}}
+19:56:28.098 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":24,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.099 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":25,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"a","windowsVirtualKeyCode":65}}
+19:56:28.101 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":25,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.102 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":26,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"a","windowsVirtualKeyCode":65}}
+19:56:28.107 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":26,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.108 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":27,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"a","windowsVirtualKeyCode":65}}
+19:56:28.116 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":27,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.117 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":28,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"r","windowsVirtualKeyCode":82}}
+19:56:28.123 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":28,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.124 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":29,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"r","windowsVirtualKeyCode":82}}
+19:56:28.133 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":29,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.134 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":30,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"r","windowsVirtualKeyCode":82}}
+19:56:28.137 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":30,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.137 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":31,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"d","windowsVirtualKeyCode":68}}
+19:56:28.142 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":31,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.143 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":32,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"d","windowsVirtualKeyCode":68}}
+19:56:28.158 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":32,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.160 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":33,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"d","windowsVirtualKeyCode":68}}
+19:56:28.166 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":33,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.168 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":34,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"_","windowsVirtualKeyCode":523}}
+19:56:28.171 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":34,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.172 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":35,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"_","windowsVirtualKeyCode":523}}
+19:56:28.181 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":35,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.181 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":36,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"_","windowsVirtualKeyCode":523}}
+19:56:28.185 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":36,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.186 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":37,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"u","windowsVirtualKeyCode":85}}
+19:56:28.189 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":37,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.190 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":38,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"u","windowsVirtualKeyCode":85}}
+19:56:28.198 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":38,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.200 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":39,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"u","windowsVirtualKeyCode":85}}
+19:56:28.212 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":39,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.213 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":40,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"s","windowsVirtualKeyCode":83}}
+19:56:28.215 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":40,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.216 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":41,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"s","windowsVirtualKeyCode":83}}
+19:56:28.222 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":41,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.224 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":42,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"s","windowsVirtualKeyCode":83}}
+19:56:28.226 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":42,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.227 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":43,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"e","windowsVirtualKeyCode":69}}
+19:56:28.230 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":43,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.233 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":44,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"e","windowsVirtualKeyCode":69}}
+19:56:28.263 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":44,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.264 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":45,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"e","windowsVirtualKeyCode":69}}
+19:56:28.267 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":45,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.268 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":46,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"r","windowsVirtualKeyCode":82}}
+19:56:28.275 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":46,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.276 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":47,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"r","windowsVirtualKeyCode":82}}
+19:56:28.288 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":47,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.289 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":48,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"r","windowsVirtualKeyCode":82}}
+19:56:28.297 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":48,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.300 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":49,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Runtime.evaluate","params":{"expression":"(document.querySelector(\"#password\") != null)","returnByValue":true}}
+19:56:28.316 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":49,"result":{"result":{"type":"boolean","value":true}},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.319 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":50,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Runtime.evaluate","params":{"expression":"var e = document.querySelector(\"input[id=password]\"); e.focus(); try { e.selectionStart = e.selectionEnd = e.value.length } catch(x) {}","returnByValue":true}}
+19:56:28.325 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":50,"result":{"result":{"type":"number","value":0,"description":"0"}},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.330 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":51,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"s","windowsVirtualKeyCode":83}}
+19:56:28.333 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":51,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.335 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":52,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"s","windowsVirtualKeyCode":83}}
+19:56:28.347 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":52,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.348 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":53,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"s","windowsVirtualKeyCode":83}}
+19:56:28.351 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":53,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.352 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":54,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"e","windowsVirtualKeyCode":69}}
+19:56:28.355 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":54,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.357 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":55,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"e","windowsVirtualKeyCode":69}}
+19:56:28.366 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":55,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.368 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":56,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"e","windowsVirtualKeyCode":69}}
+19:56:28.371 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":56,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.372 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":57,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"c","windowsVirtualKeyCode":67}}
+19:56:28.374 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":57,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.375 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":58,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"c","windowsVirtualKeyCode":67}}
+19:56:28.380 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":58,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.384 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":59,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"c","windowsVirtualKeyCode":67}}
+19:56:28.387 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":59,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.390 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":60,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"r","windowsVirtualKeyCode":82}}
+19:56:28.393 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":60,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.397 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":61,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"r","windowsVirtualKeyCode":82}}
+19:56:28.424 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":61,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.425 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":62,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"r","windowsVirtualKeyCode":82}}
+19:56:28.427 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":62,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.429 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":63,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"e","windowsVirtualKeyCode":69}}
+19:56:28.432 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":63,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.433 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":64,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"e","windowsVirtualKeyCode":69}}
+19:56:28.439 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":64,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.439 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":65,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"e","windowsVirtualKeyCode":69}}
+19:56:28.443 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":65,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.445 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":66,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"t","windowsVirtualKeyCode":84}}
+19:56:28.451 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":66,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.452 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":67,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"t","windowsVirtualKeyCode":84}}
+19:56:28.457 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":67,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.458 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":68,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"t","windowsVirtualKeyCode":84}}
+19:56:28.463 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":68,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.464 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":69,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"_","windowsVirtualKeyCode":523}}
+19:56:28.466 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":69,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.467 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":70,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"_","windowsVirtualKeyCode":523}}
+19:56:28.473 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":70,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.474 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":71,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"_","windowsVirtualKeyCode":523}}
+19:56:28.476 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":71,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.477 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":72,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"s","windowsVirtualKeyCode":83}}
+19:56:28.479 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":72,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.480 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":73,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"s","windowsVirtualKeyCode":83}}
+19:56:28.485 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":73,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.501 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":74,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"s","windowsVirtualKeyCode":83}}
+19:56:28.503 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":74,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.504 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":75,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"a","windowsVirtualKeyCode":65}}
+19:56:28.506 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":75,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.507 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":76,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"a","windowsVirtualKeyCode":65}}
+19:56:28.511 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":76,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.514 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":77,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"a","windowsVirtualKeyCode":65}}
+19:56:28.516 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":77,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.517 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":78,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"u","windowsVirtualKeyCode":85}}
+19:56:28.519 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":78,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.520 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":79,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"u","windowsVirtualKeyCode":85}}
+19:56:28.579 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":79,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.580 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":80,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"u","windowsVirtualKeyCode":85}}
+19:56:28.585 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":80,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.586 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":81,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"c","windowsVirtualKeyCode":67}}
+19:56:28.596 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":81,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.597 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":82,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"c","windowsVirtualKeyCode":67}}
+19:56:28.602 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":82,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.602 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":83,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"c","windowsVirtualKeyCode":67}}
+19:56:28.606 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":83,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.607 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":84,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"e","windowsVirtualKeyCode":69}}
+19:56:28.611 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":84,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.612 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":85,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"e","windowsVirtualKeyCode":69}}
+19:56:28.617 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":85,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.618 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":86,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"e","windowsVirtualKeyCode":69}}
+19:56:28.621 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":86,"result":{},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.623 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":87,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Runtime.evaluate","params":{"expression":"(document.querySelector(\"#login-button\") != null)","returnByValue":true}}
+19:56:28.625 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":87,"result":{"result":{"type":"boolean","value":true}},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.630 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":88,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Runtime.evaluate","params":{"expression":"document.querySelector(\"input[id=login-button]\").click()","returnByValue":true}}
+19:56:28.723 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"method":"Page.navigatedWithinDocument","params":{"frameId":"1FC502EEDEE8A835E37A429A36C8E5D0","url":"https://www.saucedemo.com/inventory.html"},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:28.723 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":88,"result":{"result":{"type":"undefined"}},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:29.053 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":89,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Runtime.evaluate","params":{"expression":"(document.querySelector(\".shopping_cart_link\") != null)","returnByValue":true}}
+19:56:29.220 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":89,"result":{"result":{"type":"boolean","value":true}},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:29.223 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":90,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Runtime.evaluate","params":{"expression":"document.querySelector(\".shopping_cart_link\") != null","returnByValue":true}}
+19:56:29.236 [nioEventLoopGroup-4-1] DEBUG c.i.k.driver.chrome_1633357555115 - << {"id":90,"result":{"result":{"type":"boolean","value":true}},"sessionId":"1B692752C80DF722726CB18B5B958AD2"}
+19:56:29.237 [pool-1-thread-2] DEBUG c.i.k.driver.chrome_1633357555115 - >> {"id":91,"sessionId":"1B692752C80DF722726CB18B5B958AD2","method":"Target.closeTarget","params":{"targetId":"1FC502EEDEE8A835E37A429A36C8E5D0"}}
+19:56:29.239 [nioEventLoopGroup-4-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client disconnected
+19:56:29.242 [pool-1-thread-2] DEBUG com.intuit.karate.shell.Command - closing command: chrome_1633357555115
+19:56:30.692 [chrome_1633357555115] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [C:\Program Files (x86)\Google\Chrome\Application\chrome.exe, --remote-debugging-port=50134, --no-first-run, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chrome_1633357555115, --disable-popup-blocking] working dir: target\chrome_1633357555115
+19:56:30.813 [pool-1-thread-3] ERROR c.i.k.driver.chrome_1633357554974 - << timed out after milliseconds: 3000 - [id: 8, sessionId: 2E10114DA8314FE5B9717824F70828CA, method: Runtime.evaluate, params: {"expression":"(document.querySelector(\"#login-button\") != null)","returnByValue":true}]
+19:56:30.814 [pool-1-thread-3] WARN  c.i.k.driver.chrome_1633357554974 - waitUntil evaluate failed: failed to get reply for: [id: 8, sessionId: 2E10114DA8314FE5B9717824F70828CA, method: Runtime.evaluate, params: {"expression":"(document.querySelector(\"#login-button\") != null)","returnByValue":true}]
+19:56:30.815 [pool-1-thread-3] DEBUG c.intuit.karate.driver.DriverOptions - waitUntil (js) - retry #1
+19:56:30.822 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"method":"Page.loadEventFired","params":{"timestamp":38390.117177},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:30.823 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"method":"Page.frameStoppedLoading","params":{"frameId":"F403A22DBADDD741191DFE4787993B20"},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:31.024 [pool-1-thread-4] ERROR c.i.k.driver.chrome_1633357554958 - << timed out after milliseconds: 3000 - [id: 8, sessionId: C7D5D015A6C75A395DD5C513A124F6EE, method: Runtime.evaluate, params: {"expression":"(document.querySelector(\".login_logo\") != null)","returnByValue":true}]
+19:56:31.024 [pool-1-thread-4] WARN  c.i.k.driver.chrome_1633357554958 - waitUntil evaluate failed: failed to get reply for: [id: 8, sessionId: C7D5D015A6C75A395DD5C513A124F6EE, method: Runtime.evaluate, params: {"expression":"(document.querySelector(\".login_logo\") != null)","returnByValue":true}]
+19:56:31.024 [pool-1-thread-4] DEBUG c.intuit.karate.driver.DriverOptions - waitUntil (js) - retry #1
+19:56:31.053 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"method":"Page.frameResized","params":{},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:31.054 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"id":8,"result":{"result":{"type":"boolean","value":true}},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:31.066 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"method":"Page.loadEventFired","params":{"timestamp":38390.459639},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:31.117 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"method":"Page.frameStoppedLoading","params":{"frameId":"0D2D9AA2CA4839B7733D4263D52DEFA1"},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:31.122 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"method":"Page.frameResized","params":{},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:31.130 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"id":8,"result":{"result":{"type":"boolean","value":true}},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:32.142 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 4 (3 remaining) classpath:examples/users/home.feature
+19:56:33.826 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1633357554974 - >> {"id":9,"sessionId":"2E10114DA8314FE5B9717824F70828CA","method":"Runtime.evaluate","params":{"expression":"(document.querySelector(\"#login-button\") != null)","returnByValue":true}}
+19:56:33.830 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"id":9,"result":{"result":{"type":"boolean","value":true}},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:33.832 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1633357554974 - >> {"id":10,"sessionId":"2E10114DA8314FE5B9717824F70828CA","method":"Runtime.evaluate","params":{"expression":"document.querySelector(\"#login-button\") != null","returnByValue":true}}
+19:56:33.839 [nioEventLoopGroup-3-1] DEBUG c.i.k.driver.chrome_1633357554974 - << {"id":10,"result":{"result":{"type":"boolean","value":true}},"sessionId":"2E10114DA8314FE5B9717824F70828CA"}
+19:56:33.839 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1633357554974 - >> {"id":11,"sessionId":"2E10114DA8314FE5B9717824F70828CA","method":"Target.closeTarget","params":{"targetId":"F403A22DBADDD741191DFE4787993B20"}}
+19:56:33.839 [nioEventLoopGroup-3-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client disconnected
+19:56:33.848 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - closing command: chrome_1633357554974
+19:56:33.884 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"method":"Page.frameResized","params":{},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:34.035 [pool-1-thread-4] DEBUG c.i.k.driver.chrome_1633357554958 - >> {"id":9,"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE","method":"Runtime.evaluate","params":{"expression":"(document.querySelector(\".login_logo\") != null)","returnByValue":true}}
+19:56:34.039 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"id":9,"result":{"result":{"type":"boolean","value":true}},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:34.044 [pool-1-thread-4] DEBUG c.i.k.driver.chrome_1633357554958 - >> {"id":10,"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE","method":"Runtime.evaluate","params":{"expression":"document.querySelector(\".login_logo\") != null","returnByValue":true}}
+19:56:34.050 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"id":10,"result":{"result":{"type":"boolean","value":true}},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:34.053 [pool-1-thread-4] DEBUG c.i.k.driver.chrome_1633357554958 - >> {"id":11,"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE","method":"Target.closeTarget","params":{"targetId":"0D2D9AA2CA4839B7733D4263D52DEFA1"}}
+19:56:34.056 [nioEventLoopGroup-5-1] DEBUG c.i.k.driver.chrome_1633357554958 - << {"id":11,"result":{"success":true},"sessionId":"C7D5D015A6C75A395DD5C513A124F6EE"}
+19:56:34.058 [nioEventLoopGroup-5-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client disconnected
+19:56:34.073 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - closing command: chrome_1633357554958
+19:56:34.720 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:examples/users/login.feature

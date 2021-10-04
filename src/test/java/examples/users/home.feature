@@ -6,10 +6,10 @@ Feature: swag labs home page ui test cases
     * call read('/preconditions/common.feature')
 
   Scenario: swag labs home page heading display test
-    Then waitFor('.title')
-    And match exists('.title') == true
-    And match text('.title') == 'Products'
+    Then waitFor(home_feature.home_title)
+    And match exists(home_feature.home_title) == true
+    And match text(home_feature.home_title) == 'Products'
 
   Scenario: swag labs home page cart display test
-    Given waitFor('.shopping_cart_link')
-    And match exists('.shopping_cart_link') == true
+    Given waitFor(home_feature.home_shopping_cart_link)
+    And match exists(home_feature.home_shopping_cart_link) == true
