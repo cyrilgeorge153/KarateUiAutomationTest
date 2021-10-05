@@ -2,7 +2,7 @@
 
 Karate maven ui automation project. To execute test cases use the following commands from pom.xml location.
 
-#For parallel execution use following commands in the following  browsers
+# For parallel execution use following commands in the following  browsers
 
 Native Chrome:`mvn clean test -Dbrowser=nativechrome -Dtest=TestRunnerParallel`
 
@@ -32,9 +32,9 @@ Firefox:`mvn clean test -Dbrowser=firefox -Dtest=TestRunner`
 
 Headless firefox:`mvn clean test -Dbrowser=headlessfirefox -Dtest=TestRunner`
 
-#Report location#: KarateUiAutomationTest/target/karate-reports/karate-summary.html
+# Html Report location#:KarateUiAutomationTest/target/karate-reports/karate-summary.html
 
-To generate cucumber reporting with parallel execution
+To generate cucumber reporting with parallel execution use following commands
 
 Native Chrome:`mvn clean test -Dbrowser=nativechrome -Dtest=TestRunnerCucumberReporting`
 
@@ -48,5 +48,5 @@ Firefox:`mvn clean test -Dbrowser=firefox -Dtest=TestRunnerCucumberReporting`
 
 Headless firefox:`mvn clean test -Dbrowser=headlessfirefox -Dtest=TestRunnerCucumberReporting`
 
-#Report location#: KarateUiAutomationTest\target\cucumber-html-reports\report-feature_1407342867.html
+# Cucumber Report location:KarateUiAutomationTest\target\cucumber-html-reports\report-feature_1407342867.html
 
