@@ -1,2 +1,3 @@
-examples\TestRunnerParallel.class
+examples\TestRunnerCucumberReporting.class
 examples\users\TestRunner.class
+examples\TestRunnerParallel.class

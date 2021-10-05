@@ -14,5 +14,4 @@ class TestRunnerParallel {
                 .parallel(4);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
-
 }
