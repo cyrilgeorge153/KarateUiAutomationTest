@@ -761,3 +761,542 @@
 20:30:20.334 [chromedriver_1633359602488] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/examples/users/chromedriver.exe, --port=50358, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chromedriver_1633359602488] working dir: target\chromedriver_1633359602488
 20:30:22.463 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 4 (3 remaining) classpath:examples/users/home.feature
 20:30:22.619 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:examples/users/login.feature
+09:01:51.996 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:01:52.386 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1633404712371
+09:01:52.469 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 8 - ^swag labs home page heading display test$
+09:01:55.494 [main] INFO  com.intuit.karate - the browser set is: chrome, default: "chrome" 
+09:01:55.510 [main] INFO  com.intuit.karate - the grid url set is: false, default: false 
+09:01:55.541 [main] INFO  com.intuit.karate - Selected Chrome 
+09:01:55.764 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9515
+09:01:55.764 [chromedriver_1633404715764] DEBUG c.i.k.d.chromedriver_1633404715764 - command: [src/test/java/examples/users/chromedriver.exe, --port=9515, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chromedriver_1633404715764], working dir: target\chromedriver_1633404715764
+09:01:55.811 [main] DEBUG c.i.k.d.chromedriver_1633404715764 - poll attempt #0 for port to be ready - localhost:9515
+09:01:58.143 [main] DEBUG c.i.k.d.chromedriver_1633404715764 - poll attempt #1 for port to be ready - localhost:9515
+09:01:58.573 [chromedriver_1633404715764-out] DEBUG c.i.k.d.chromedriver_1633404715764 - Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 9515
+09:01:58.573 [chromedriver_1633404715764-out] DEBUG c.i.k.d.chromedriver_1633404715764 - Only local connections are allowed.
+09:01:58.573 [chromedriver_1633404715764-out] DEBUG c.i.k.d.chromedriver_1633404715764 - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+09:01:58.605 [chromedriver_1633404715764-out] DEBUG c.i.k.d.chromedriver_1633404715764 - ChromeDriver was started successfully.
+09:02:00.246 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9515/session
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 57
+1 > Host: localhost:9515
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 > Accept-Encoding: gzip,deflate
+{"capabilities":{"alwaysMatch":{"browserName":"chrome"}}}
+
+09:02:02.350 [main] DEBUG com.intuit.karate - response time in milliseconds: 2088
+1 < 200
+1 < Content-Length: 788
+1 < Content-Type: application/json; charset=utf-8
+1 < cache-control: no-cache
+{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"94.0.4606.71","chrome":{"chromedriverVersion":"94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204})","userDataDir":"C:\\Users\\cyril\\AppData\\Local\\Temp\\scoped_dir3756_1860163303"},"goog:chromeOptions":{"debuggerAddress":"localhost:54017"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"f0ba829532e469e86ffa4fe3d1d11445"}}
+09:02:02.350 [main] DEBUG c.i.k.d.chromedriver_1633404715764 - init session id: f0ba829532e469e86ffa4fe3d1d11445
+09:02:02.560 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445/url
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 39
+2 > Host: localhost:9515
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+2 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/www.saucedemo.com\/"}
+
+09:02:04.142 [main] DEBUG com.intuit.karate - response time in milliseconds: 1582
+2 < 200
+2 < Content-Length: 14
+2 < Content-Type: application/json; charset=utf-8
+2 < cache-control: no-cache
+{"value":null}
+09:02:04.170 [main] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445/window/maximize
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 2
+3 > Host: localhost:9515
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+3 > Accept-Encoding: gzip,deflate
+{}
+
+09:02:04.301 [main] DEBUG com.intuit.karate - response time in milliseconds: 131
+3 < 200
+3 < Content-Length: 51
+3 < Content-Type: application/json; charset=utf-8
+3 < cache-control: no-cache
+{"value":{"height":744,"width":1382,"x":-8,"y":-8}}
+09:02:04.301 [main] DEBUG com.intuit.karate - request:
+4 > POST http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445/execute/sync
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 78
+4 > Host: localhost:9515
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+4 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\"#user-name\") != null)","args":[]}
+
+09:02:04.317 [main] DEBUG com.intuit.karate - response time in milliseconds: 16
+4 < 200
+4 < Content-Length: 14
+4 < Content-Type: application/json; charset=utf-8
+4 < cache-control: no-cache
+{"value":true}
+09:02:04.332 [main] DEBUG com.intuit.karate - request:
+5 > POST http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445/element
+5 > Content-Type: application/json; charset=UTF-8
+5 > Content-Length: 45
+5 > Host: localhost:9515
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+5 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"#user-name"}
+
+09:02:04.348 [main] DEBUG com.intuit.karate - response time in milliseconds: 16
+5 < 200
+5 < Content-Length: 88
+5 < Content-Type: application/json; charset=utf-8
+5 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"46c1d960-e027-40b5-8277-467d5628336c"}}
+09:02:04.364 [main] DEBUG com.intuit.karate - request:
+6 > POST http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445/element/46c1d960-e027-40b5-8277-467d5628336c/value
+6 > Content-Type: application/json; charset=UTF-8
+6 > Content-Length: 24
+6 > Host: localhost:9515
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+6 > Accept-Encoding: gzip,deflate
+{"text":"standard_user"}
+
+09:02:04.558 [main] DEBUG com.intuit.karate - response time in milliseconds: 194
+6 < 200
+6 < Content-Length: 14
+6 < Content-Type: application/json; charset=utf-8
+6 < cache-control: no-cache
+{"value":null}
+09:02:04.562 [main] DEBUG com.intuit.karate - request:
+7 > POST http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445/execute/sync
+7 > Content-Type: application/json; charset=UTF-8
+7 > Content-Length: 77
+7 > Host: localhost:9515
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+7 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\"#password\") != null)","args":[]}
+
+09:02:04.571 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+7 < 200
+7 < Content-Length: 14
+7 < Content-Type: application/json; charset=utf-8
+7 < cache-control: no-cache
+{"value":true}
+09:02:04.575 [main] DEBUG com.intuit.karate - request:
+8 > POST http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445/element
+8 > Content-Type: application/json; charset=UTF-8
+8 > Content-Length: 44
+8 > Host: localhost:9515
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+8 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"#password"}
+
+09:02:04.587 [main] DEBUG com.intuit.karate - response time in milliseconds: 12
+8 < 200
+8 < Content-Length: 88
+8 < Content-Type: application/json; charset=utf-8
+8 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"d69c2ca0-7766-49ff-a2e2-9a5a09c013fc"}}
+09:02:04.587 [main] DEBUG com.intuit.karate - request:
+9 > POST http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445/element/d69c2ca0-7766-49ff-a2e2-9a5a09c013fc/value
+9 > Content-Type: application/json; charset=UTF-8
+9 > Content-Length: 23
+9 > Host: localhost:9515
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+9 > Accept-Encoding: gzip,deflate
+{"text":"secret_sauce"}
+
+09:02:04.709 [main] DEBUG com.intuit.karate - response time in milliseconds: 122
+9 < 200
+9 < Content-Length: 14
+9 < Content-Type: application/json; charset=utf-8
+9 < cache-control: no-cache
+{"value":null}
+09:02:04.714 [main] DEBUG com.intuit.karate - request:
+10 > POST http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445/execute/sync
+10 > Content-Type: application/json; charset=UTF-8
+10 > Content-Length: 81
+10 > Host: localhost:9515
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+10 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\"#login-button\") != null)","args":[]}
+
+09:02:04.721 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+10 < 200
+10 < Content-Length: 14
+10 < Content-Type: application/json; charset=utf-8
+10 < cache-control: no-cache
+{"value":true}
+09:02:04.728 [main] DEBUG com.intuit.karate - request:
+11 > POST http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445/execute/sync
+11 > Content-Type: application/json; charset=UTF-8
+11 > Content-Length: 79
+11 > Host: localhost:9515
+11 > Connection: Keep-Alive
+11 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+11 > Accept-Encoding: gzip,deflate
+{"script":"return document.querySelector(\"#login-button\").click()","args":[]}
+
+09:02:04.912 [main] DEBUG com.intuit.karate - response time in milliseconds: 183
+11 < 200
+11 < Content-Length: 14
+11 < Content-Type: application/json; charset=utf-8
+11 < cache-control: no-cache
+{"value":null}
+09:02:04.941 [main] DEBUG com.intuit.karate - request:
+12 > POST http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445/execute/sync
+12 > Content-Type: application/json; charset=UTF-8
+12 > Content-Length: 74
+12 > Host: localhost:9515
+12 > Connection: Keep-Alive
+12 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+12 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\".title\") != null)","args":[]}
+
+09:02:04.960 [main] DEBUG com.intuit.karate - response time in milliseconds: 19
+12 < 200
+12 < Content-Length: 14
+12 < Content-Type: application/json; charset=utf-8
+12 < cache-control: no-cache
+{"value":true}
+09:02:04.971 [main] DEBUG com.intuit.karate - request:
+13 > POST http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445/execute/sync
+13 > Content-Type: application/json; charset=UTF-8
+13 > Content-Length: 72
+13 > Host: localhost:9515
+13 > Connection: Keep-Alive
+13 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+13 > Accept-Encoding: gzip,deflate
+{"script":"return document.querySelector(\".title\") != null","args":[]}
+
+09:02:04.978 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+13 < 200
+13 < Content-Length: 14
+13 < Content-Type: application/json; charset=utf-8
+13 < cache-control: no-cache
+{"value":true}
+09:02:05.195 [main] DEBUG com.intuit.karate - request:
+14 > POST http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445/execute/sync
+14 > Content-Type: application/json; charset=UTF-8
+14 > Content-Length: 76
+14 > Host: localhost:9515
+14 > Connection: Keep-Alive
+14 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+14 > Accept-Encoding: gzip,deflate
+{"script":"return document.querySelector(\".title\").textContent","args":[]}
+
+09:02:05.205 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+14 < 200
+14 < Content-Length: 20
+14 < Content-Type: application/json; charset=utf-8
+14 < cache-control: no-cache
+{"value":"Products"}
+09:02:05.210 [main] DEBUG com.intuit.karate - request:
+15 > DELETE http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445/window
+15 > Host: localhost:9515
+15 > Connection: Keep-Alive
+15 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+15 > Accept-Encoding: gzip,deflate
+
+
+09:02:06.145 [main] DEBUG com.intuit.karate - response time in milliseconds: 934
+15 < 200
+15 < Content-Length: 12
+15 < Content-Type: application/json; charset=utf-8
+15 < cache-control: no-cache
+{"value":[]}
+09:02:06.150 [main] DEBUG com.intuit.karate - request:
+16 > DELETE http://localhost:9515/session/f0ba829532e469e86ffa4fe3d1d11445
+16 > Host: localhost:9515
+16 > Connection: Keep-Alive
+16 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+16 > Accept-Encoding: gzip,deflate
+
+
+09:02:06.819 [main] DEBUG com.intuit.karate - response time in milliseconds: 668
+16 < 200
+16 < Content-Length: 14
+16 < Content-Type: application/json; charset=utf-8
+16 < cache-control: no-cache
+{"value":null}
+09:02:06.819 [main] DEBUG com.intuit.karate.shell.Command - closing command: chromedriver_1633404715764
+09:02:07.382 [chromedriver_1633404715764] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/examples/users/chromedriver.exe, --port=9515, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chromedriver_1633404715764] working dir: target\chromedriver_1633404715764
+09:02:08.476 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/home.feature
+09:04:40.631 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:04:40.647 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1633404880647
+09:04:40.740 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 8 - ^swag labs home page heading display test$
+09:04:43.586 [main] INFO  com.intuit.karate - the browser set is: chrome, default: "chrome" 
+09:04:43.601 [main] INFO  com.intuit.karate - the grid url set is: false, default: false 
+09:04:43.648 [main] INFO  com.intuit.karate - Selected Chrome 
+09:04:43.883 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9515
+09:04:43.898 [chromedriver_1633404883883] DEBUG c.i.k.d.chromedriver_1633404883883 - command: [src/test/java/examples/users/chromedriver.exe, --port=9515, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chromedriver_1633404883883], working dir: target\chromedriver_1633404883883
+09:04:43.945 [main] DEBUG c.i.k.d.chromedriver_1633404883883 - poll attempt #0 for port to be ready - localhost:9515
+09:04:44.605 [chromedriver_1633404883883-out] DEBUG c.i.k.d.chromedriver_1633404883883 - Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 9515
+09:04:44.605 [chromedriver_1633404883883-out] DEBUG c.i.k.d.chromedriver_1633404883883 - Only local connections are allowed.
+09:04:44.605 [chromedriver_1633404883883-out] DEBUG c.i.k.d.chromedriver_1633404883883 - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+09:04:44.605 [chromedriver_1633404883883-out] DEBUG c.i.k.d.chromedriver_1633404883883 - ChromeDriver was started successfully.
+09:04:46.114 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9515/session
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 57
+1 > Host: localhost:9515
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 > Accept-Encoding: gzip,deflate
+{"capabilities":{"alwaysMatch":{"browserName":"chrome"}}}
+
+09:04:48.028 [main] DEBUG com.intuit.karate - response time in milliseconds: 1898
+1 < 200
+1 < Content-Length: 789
+1 < Content-Type: application/json; charset=utf-8
+1 < cache-control: no-cache
+{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"94.0.4606.71","chrome":{"chromedriverVersion":"94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204})","userDataDir":"C:\\Users\\cyril\\AppData\\Local\\Temp\\scoped_dir23452_1506820576"},"goog:chromeOptions":{"debuggerAddress":"localhost:49932"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"fd19d8ff9b955586dc850c8feb9f28e0"}}
+09:04:48.028 [main] DEBUG c.i.k.d.chromedriver_1633404883883 - init session id: fd19d8ff9b955586dc850c8feb9f28e0
+09:04:48.203 [main] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0/url
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 39
+2 > Host: localhost:9515
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+2 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/www.saucedemo.com\/"}
+
+09:04:48.802 [main] DEBUG com.intuit.karate - response time in milliseconds: 599
+2 < 200
+2 < Content-Length: 14
+2 < Content-Type: application/json; charset=utf-8
+2 < cache-control: no-cache
+{"value":null}
+09:04:48.830 [main] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0/window/maximize
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 2
+3 > Host: localhost:9515
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+3 > Accept-Encoding: gzip,deflate
+{}
+
+09:04:48.959 [main] DEBUG com.intuit.karate - response time in milliseconds: 128
+3 < 200
+3 < Content-Length: 51
+3 < Content-Type: application/json; charset=utf-8
+3 < cache-control: no-cache
+{"value":{"height":744,"width":1382,"x":-8,"y":-8}}
+09:04:48.959 [main] DEBUG com.intuit.karate - request:
+4 > POST http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0/execute/sync
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 78
+4 > Host: localhost:9515
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+4 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\"#user-name\") != null)","args":[]}
+
+09:04:48.975 [main] DEBUG com.intuit.karate - response time in milliseconds: 16
+4 < 200
+4 < Content-Length: 14
+4 < Content-Type: application/json; charset=utf-8
+4 < cache-control: no-cache
+{"value":true}
+09:04:49.001 [main] DEBUG com.intuit.karate - request:
+5 > POST http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0/element
+5 > Content-Type: application/json; charset=UTF-8
+5 > Content-Length: 45
+5 > Host: localhost:9515
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+5 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"#user-name"}
+
+09:04:49.029 [main] DEBUG com.intuit.karate - response time in milliseconds: 27
+5 < 200
+5 < Content-Length: 88
+5 < Content-Type: application/json; charset=utf-8
+5 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"b0825fa6-0e58-4086-ab17-990f5a139c4d"}}
+09:04:49.029 [main] DEBUG com.intuit.karate - request:
+6 > POST http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0/element/b0825fa6-0e58-4086-ab17-990f5a139c4d/value
+6 > Content-Type: application/json; charset=UTF-8
+6 > Content-Length: 24
+6 > Host: localhost:9515
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+6 > Accept-Encoding: gzip,deflate
+{"text":"standard_user"}
+
+09:04:49.219 [main] DEBUG com.intuit.karate - response time in milliseconds: 190
+6 < 200
+6 < Content-Length: 14
+6 < Content-Type: application/json; charset=utf-8
+6 < cache-control: no-cache
+{"value":null}
+09:04:49.223 [main] DEBUG com.intuit.karate - request:
+7 > POST http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0/execute/sync
+7 > Content-Type: application/json; charset=UTF-8
+7 > Content-Length: 77
+7 > Host: localhost:9515
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+7 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\"#password\") != null)","args":[]}
+
+09:04:49.230 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
+7 < 200
+7 < Content-Length: 14
+7 < Content-Type: application/json; charset=utf-8
+7 < cache-control: no-cache
+{"value":true}
+09:04:49.234 [main] DEBUG com.intuit.karate - request:
+8 > POST http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0/element
+8 > Content-Type: application/json; charset=UTF-8
+8 > Content-Length: 44
+8 > Host: localhost:9515
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+8 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"#password"}
+
+09:04:49.246 [main] DEBUG com.intuit.karate - response time in milliseconds: 12
+8 < 200
+8 < Content-Length: 88
+8 < Content-Type: application/json; charset=utf-8
+8 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"e4789f56-f9d7-45b4-bf58-8fdeca2bfd83"}}
+09:04:49.246 [main] DEBUG com.intuit.karate - request:
+9 > POST http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0/element/e4789f56-f9d7-45b4-bf58-8fdeca2bfd83/value
+9 > Content-Type: application/json; charset=UTF-8
+9 > Content-Length: 23
+9 > Host: localhost:9515
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+9 > Accept-Encoding: gzip,deflate
+{"text":"secret_sauce"}
+
+09:04:49.391 [main] DEBUG com.intuit.karate - response time in milliseconds: 145
+9 < 200
+9 < Content-Length: 14
+9 < Content-Type: application/json; charset=utf-8
+9 < cache-control: no-cache
+{"value":null}
+09:04:49.397 [main] DEBUG com.intuit.karate - request:
+10 > POST http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0/execute/sync
+10 > Content-Type: application/json; charset=UTF-8
+10 > Content-Length: 81
+10 > Host: localhost:9515
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+10 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\"#login-button\") != null)","args":[]}
+
+09:04:49.404 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+10 < 200
+10 < Content-Length: 14
+10 < Content-Type: application/json; charset=utf-8
+10 < cache-control: no-cache
+{"value":true}
+09:04:49.410 [main] DEBUG com.intuit.karate - request:
+11 > POST http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0/execute/sync
+11 > Content-Type: application/json; charset=UTF-8
+11 > Content-Length: 79
+11 > Host: localhost:9515
+11 > Connection: Keep-Alive
+11 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+11 > Accept-Encoding: gzip,deflate
+{"script":"return document.querySelector(\"#login-button\").click()","args":[]}
+
+09:04:49.556 [main] DEBUG com.intuit.karate - response time in milliseconds: 145
+11 < 200
+11 < Content-Length: 14
+11 < Content-Type: application/json; charset=utf-8
+11 < cache-control: no-cache
+{"value":null}
+09:04:49.585 [main] DEBUG com.intuit.karate - request:
+12 > POST http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0/execute/sync
+12 > Content-Type: application/json; charset=UTF-8
+12 > Content-Length: 74
+12 > Host: localhost:9515
+12 > Connection: Keep-Alive
+12 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+12 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\".title\") != null)","args":[]}
+
+09:04:49.597 [main] DEBUG com.intuit.karate - response time in milliseconds: 12
+12 < 200
+12 < Content-Length: 14
+12 < Content-Type: application/json; charset=utf-8
+12 < cache-control: no-cache
+{"value":true}
+09:04:49.611 [main] DEBUG com.intuit.karate - request:
+13 > POST http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0/execute/sync
+13 > Content-Type: application/json; charset=UTF-8
+13 > Content-Length: 72
+13 > Host: localhost:9515
+13 > Connection: Keep-Alive
+13 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+13 > Accept-Encoding: gzip,deflate
+{"script":"return document.querySelector(\".title\") != null","args":[]}
+
+09:04:49.629 [main] DEBUG com.intuit.karate - response time in milliseconds: 18
+13 < 200
+13 < Content-Length: 14
+13 < Content-Type: application/json; charset=utf-8
+13 < cache-control: no-cache
+{"value":true}
+09:04:49.659 [main] DEBUG com.intuit.karate - request:
+14 > POST http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0/execute/sync
+14 > Content-Type: application/json; charset=UTF-8
+14 > Content-Length: 76
+14 > Host: localhost:9515
+14 > Connection: Keep-Alive
+14 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+14 > Accept-Encoding: gzip,deflate
+{"script":"return document.querySelector(\".title\").textContent","args":[]}
+
+09:04:49.659 [main] DEBUG com.intuit.karate - response time in milliseconds: 0
+14 < 200
+14 < Content-Length: 20
+14 < Content-Type: application/json; charset=utf-8
+14 < cache-control: no-cache
+{"value":"Products"}
+09:04:49.674 [main] DEBUG com.intuit.karate - request:
+15 > DELETE http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0/window
+15 > Host: localhost:9515
+15 > Connection: Keep-Alive
+15 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+15 > Accept-Encoding: gzip,deflate
+
+
+09:04:51.628 [main] DEBUG com.intuit.karate - response time in milliseconds: 1954
+15 < 200
+15 < Content-Length: 12
+15 < Content-Type: application/json; charset=utf-8
+15 < cache-control: no-cache
+{"value":[]}
+09:04:51.628 [main] DEBUG com.intuit.karate - request:
+16 > DELETE http://localhost:9515/session/fd19d8ff9b955586dc850c8feb9f28e0
+16 > Host: localhost:9515
+16 > Connection: Keep-Alive
+16 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+16 > Accept-Encoding: gzip,deflate
+
+
+09:04:51.815 [main] DEBUG com.intuit.karate - response time in milliseconds: 187
+16 < 200
+16 < Content-Length: 14
+16 < Content-Type: application/json; charset=utf-8
+16 < cache-control: no-cache
+{"value":null}
+09:04:51.815 [main] DEBUG com.intuit.karate.shell.Command - closing command: chromedriver_1633404883883
+09:04:52.143 [chromedriver_1633404883883] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/examples/users/chromedriver.exe, --port=9515, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chromedriver_1633404883883] working dir: target\chromedriver_1633404883883
+09:04:53.721 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/home.feature

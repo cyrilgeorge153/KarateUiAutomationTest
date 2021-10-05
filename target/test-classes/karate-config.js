@@ -10,7 +10,9 @@ function fn() {
 
   // configurations.
   var config = {
-    host: 'http://httpstat.us/'
+    aut_url: 'https://www.saucedemo.com/',
+    username:'standard_user',
+    password:'secret_sauce'
   };
 
   if (browser == 'chrome')
