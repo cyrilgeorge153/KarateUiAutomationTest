@@ -37,7 +37,7 @@ public class TestRunnerCucumberReporting {
     public static void tearDown() {
         try {
             Desktop.getDesktop()
-                    .browse(new File("target/cucumber-html-reports/report-feature_1407342867.html").toURI());
+                    .browse(new File("target/cucumber-html-reports/overview-features.html").toURI());
         } catch (IOException e) {
             e.printStackTrace();
         }

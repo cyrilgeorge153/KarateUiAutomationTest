@@ -12,4 +12,4 @@ Feature: swag labs home page ui test cases
 
   Scenario: swag labs home page cart display test
     Given waitFor(home_feature.home_shopping_cart_link)
-    And match exists(home_feature.home_shopping_cart_link) == false
+    And match exists(home_feature.home_shopping_cart_link) == true

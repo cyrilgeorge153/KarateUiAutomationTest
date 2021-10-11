@@ -3079,3 +3079,775 @@ classpath:examples/users/home.feature:15
 21:42:48.296 [chromedriver_1633709550316] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/examples/users/chromedriver.exe, --port=50703, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chromedriver_1633709550316] working dir: target\chromedriver_1633709550316
 21:42:49.555 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:examples/users/home.feature
 21:42:49.821 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:examples/users/login.feature
+09:39:08.916 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:39:09.068 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1633925349029
+09:39:09.094 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+09:39:12.235 [pool-1-thread-4] INFO  com.intuit.karate - the browser set is: chrome, default: "chrome" 
+09:39:12.235 [pool-1-thread-2] INFO  com.intuit.karate - the browser set is: chrome, default: "chrome" 
+09:39:12.236 [pool-1-thread-3] INFO  com.intuit.karate - the browser set is: chrome, default: "chrome" 
+09:39:12.235 [pool-1-thread-1] INFO  com.intuit.karate - the browser set is: chrome, default: "chrome" 
+09:39:12.253 [pool-1-thread-4] INFO  com.intuit.karate - the grid url set is: false, default: false 
+09:39:12.247 [pool-1-thread-1] INFO  com.intuit.karate - the grid url set is: false, default: false 
+09:39:12.247 [pool-1-thread-3] INFO  com.intuit.karate - the grid url set is: false, default: false 
+09:39:12.247 [pool-1-thread-2] INFO  com.intuit.karate - the grid url set is: false, default: false 
+09:39:12.303 [pool-1-thread-3] INFO  com.intuit.karate - Selected Chrome 
+09:39:12.303 [pool-1-thread-1] INFO  com.intuit.karate - Selected Chrome 
+09:39:12.308 [pool-1-thread-2] INFO  com.intuit.karate - Selected Chrome 
+09:39:12.313 [pool-1-thread-4] INFO  com.intuit.karate - Selected Chrome 
+09:39:12.840 [pool-1-thread-1] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9515
+09:39:12.843 [pool-1-thread-2] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 57225
+09:39:12.844 [pool-1-thread-2] WARN  c.intuit.karate.driver.DriverOptions - preferred port 9515 not available, will use: 57225
+09:39:12.845 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 57226
+09:39:12.845 [pool-1-thread-3] WARN  c.intuit.karate.driver.DriverOptions - preferred port 9515 not available, will use: 57226
+09:39:12.846 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 57227
+09:39:12.846 [pool-1-thread-4] WARN  c.intuit.karate.driver.DriverOptions - preferred port 9515 not available, will use: 57227
+09:39:12.851 [chromedriver_1633925352840] DEBUG c.i.k.d.chromedriver_1633925352840 - command: [src/test/java/examples/users/chromedriver.exe, --port=57226, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chromedriver_1633925352840], working dir: target\chromedriver_1633925352840
+09:39:12.851 [chromedriver_1633925352678] DEBUG c.i.k.d.chromedriver_1633925352678 - command: [src/test/java/examples/users/chromedriver.exe, --port=9515, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chromedriver_1633925352678], working dir: target\chromedriver_1633925352678
+09:39:12.852 [chromedriver_1633925352811] DEBUG c.i.k.d.chromedriver_1633925352811 - command: [src/test/java/examples/users/chromedriver.exe, --port=57225, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chromedriver_1633925352811], working dir: target\chromedriver_1633925352811
+09:39:12.858 [chromedriver_1633925352843] DEBUG c.i.k.d.chromedriver_1633925352843 - command: [src/test/java/examples/users/chromedriver.exe, --port=57227, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chromedriver_1633925352843], working dir: target\chromedriver_1633925352843
+09:39:12.872 [pool-1-thread-1] DEBUG c.i.k.d.chromedriver_1633925352678 - poll attempt #0 for port to be ready - localhost:9515
+09:39:12.872 [pool-1-thread-3] DEBUG c.i.k.d.chromedriver_1633925352840 - poll attempt #0 for port to be ready - localhost:57226
+09:39:12.872 [pool-1-thread-4] DEBUG c.i.k.d.chromedriver_1633925352843 - poll attempt #0 for port to be ready - localhost:57227
+09:39:12.872 [pool-1-thread-2] DEBUG c.i.k.d.chromedriver_1633925352811 - poll attempt #0 for port to be ready - localhost:57225
+09:39:15.184 [pool-1-thread-2] DEBUG c.i.k.d.chromedriver_1633925352811 - poll attempt #1 for port to be ready - localhost:57225
+09:39:15.186 [pool-1-thread-4] DEBUG c.i.k.d.chromedriver_1633925352843 - poll attempt #1 for port to be ready - localhost:57227
+09:39:15.206 [pool-1-thread-1] DEBUG c.i.k.d.chromedriver_1633925352678 - poll attempt #1 for port to be ready - localhost:9515
+09:39:15.269 [pool-1-thread-3] DEBUG c.i.k.d.chromedriver_1633925352840 - poll attempt #1 for port to be ready - localhost:57226
+09:39:17.458 [pool-1-thread-4] DEBUG c.i.k.d.chromedriver_1633925352843 - poll attempt #2 for port to be ready - localhost:57227
+09:39:17.458 [pool-1-thread-2] DEBUG c.i.k.d.chromedriver_1633925352811 - poll attempt #2 for port to be ready - localhost:57225
+09:39:17.483 [pool-1-thread-1] DEBUG c.i.k.d.chromedriver_1633925352678 - poll attempt #2 for port to be ready - localhost:9515
+09:39:17.568 [pool-1-thread-3] DEBUG c.i.k.d.chromedriver_1633925352840 - poll attempt #2 for port to be ready - localhost:57226
+09:39:18.249 [chromedriver_1633925352840-out] DEBUG c.i.k.d.chromedriver_1633925352840 - Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 57226
+09:39:18.249 [chromedriver_1633925352811-out] DEBUG c.i.k.d.chromedriver_1633925352811 - Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 57225
+09:39:18.250 [chromedriver_1633925352811-out] DEBUG c.i.k.d.chromedriver_1633925352811 - Only local connections are allowed.
+09:39:18.250 [chromedriver_1633925352840-out] DEBUG c.i.k.d.chromedriver_1633925352840 - Only local connections are allowed.
+09:39:18.250 [chromedriver_1633925352811-out] DEBUG c.i.k.d.chromedriver_1633925352811 - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+09:39:18.250 [chromedriver_1633925352840-out] DEBUG c.i.k.d.chromedriver_1633925352840 - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+09:39:18.252 [chromedriver_1633925352843-out] DEBUG c.i.k.d.chromedriver_1633925352843 - Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 57227
+09:39:18.252 [chromedriver_1633925352843-out] DEBUG c.i.k.d.chromedriver_1633925352843 - Only local connections are allowed.
+09:39:18.253 [chromedriver_1633925352843-out] DEBUG c.i.k.d.chromedriver_1633925352843 - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+09:39:18.253 [chromedriver_1633925352678-out] DEBUG c.i.k.d.chromedriver_1633925352678 - Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 9515
+09:39:18.254 [chromedriver_1633925352678-out] DEBUG c.i.k.d.chromedriver_1633925352678 - Only local connections are allowed.
+09:39:18.254 [chromedriver_1633925352678-out] DEBUG c.i.k.d.chromedriver_1633925352678 - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+09:39:18.298 [chromedriver_1633925352843-out] DEBUG c.i.k.d.chromedriver_1633925352843 - ChromeDriver was started successfully.
+09:39:18.298 [chromedriver_1633925352678-out] DEBUG c.i.k.d.chromedriver_1633925352678 - ChromeDriver was started successfully.
+09:39:18.298 [chromedriver_1633925352840-out] DEBUG c.i.k.d.chromedriver_1633925352840 - ChromeDriver was started successfully.
+09:39:18.299 [chromedriver_1633925352811-out] DEBUG c.i.k.d.chromedriver_1633925352811 - ChromeDriver was started successfully.
+09:39:20.257 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:57226/session
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 57
+1 > Host: localhost:57226
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 > Accept-Encoding: gzip,deflate
+{"capabilities":{"alwaysMatch":{"browserName":"chrome"}}}
+
+09:39:20.259 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9515/session
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 57
+1 > Host: localhost:9515
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 > Accept-Encoding: gzip,deflate
+{"capabilities":{"alwaysMatch":{"browserName":"chrome"}}}
+
+09:39:20.259 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:57225/session
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 57
+1 > Host: localhost:57225
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 > Accept-Encoding: gzip,deflate
+{"capabilities":{"alwaysMatch":{"browserName":"chrome"}}}
+
+09:39:20.259 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:57227/session
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 57
+1 > Host: localhost:57227
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+1 > Accept-Encoding: gzip,deflate
+{"capabilities":{"alwaysMatch":{"browserName":"chrome"}}}
+
+09:39:32.502 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 12238
+1 < 200
+1 < Content-Length: 789
+1 < Content-Type: application/json; charset=utf-8
+1 < cache-control: no-cache
+{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"94.0.4606.71","chrome":{"chromedriverVersion":"94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204})","userDataDir":"C:\\Users\\cyril\\AppData\\Local\\Temp\\scoped_dir25128_1547744857"},"goog:chromeOptions":{"debuggerAddress":"localhost:57245"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"45df22ed7b54047d458a8c0060fd4212"}}
+09:39:32.515 [pool-1-thread-1] DEBUG c.i.k.d.chromedriver_1633925352678 - init session id: 45df22ed7b54047d458a8c0060fd4212
+09:39:32.559 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 12300
+1 < 200
+1 < Content-Length: 788
+1 < Content-Type: application/json; charset=utf-8
+1 < cache-control: no-cache
+{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"94.0.4606.71","chrome":{"chromedriverVersion":"94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204})","userDataDir":"C:\\Users\\cyril\\AppData\\Local\\Temp\\scoped_dir14920_489737111"},"goog:chromeOptions":{"debuggerAddress":"localhost:57244"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"2b3a7a9e54369997040373389bb5a8b4"}}
+09:39:32.564 [pool-1-thread-2] DEBUG c.i.k.d.chromedriver_1633925352811 - init session id: 2b3a7a9e54369997040373389bb5a8b4
+09:39:32.646 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 12389
+1 < 200
+1 < Content-Length: 789
+1 < Content-Type: application/json; charset=utf-8
+1 < cache-control: no-cache
+{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"94.0.4606.71","chrome":{"chromedriverVersion":"94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204})","userDataDir":"C:\\Users\\cyril\\AppData\\Local\\Temp\\scoped_dir20232_1976331411"},"goog:chromeOptions":{"debuggerAddress":"localhost:57246"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"1219b9c10eb7466315b9eb95fea21569"}}
+09:39:32.652 [pool-1-thread-3] DEBUG c.i.k.d.chromedriver_1633925352840 - init session id: 1219b9c10eb7466315b9eb95fea21569
+09:39:32.779 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 12520
+1 < 200
+1 < Content-Length: 789
+1 < Content-Type: application/json; charset=utf-8
+1 < cache-control: no-cache
+{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"94.0.4606.71","chrome":{"chromedriverVersion":"94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204})","userDataDir":"C:\\Users\\cyril\\AppData\\Local\\Temp\\scoped_dir23428_1151828726"},"goog:chromeOptions":{"debuggerAddress":"localhost:57247"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"43c468108d58d3efa3820bf4defe7f36"}}
+09:39:32.780 [pool-1-thread-4] DEBUG c.i.k.d.chromedriver_1633925352843 - init session id: 43c468108d58d3efa3820bf4defe7f36
+09:39:33.238 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:57226/session/1219b9c10eb7466315b9eb95fea21569/url
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 39
+2 > Host: localhost:57226
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+2 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/www.saucedemo.com\/"}
+
+09:39:33.420 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:57225/session/2b3a7a9e54369997040373389bb5a8b4/url
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 39
+2 > Host: localhost:57225
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+2 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/www.saucedemo.com\/"}
+
+09:39:33.436 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:57227/session/43c468108d58d3efa3820bf4defe7f36/url
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 39
+2 > Host: localhost:57227
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+2 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/www.saucedemo.com\/"}
+
+09:39:33.577 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212/url
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 39
+2 > Host: localhost:9515
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+2 > Accept-Encoding: gzip,deflate
+{"url":"https:\/\/www.saucedemo.com\/"}
+
+09:39:35.859 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 2439
+2 < 200
+2 < Content-Length: 14
+2 < Content-Type: application/json; charset=utf-8
+2 < cache-control: no-cache
+{"value":null}
+09:39:35.905 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:57225/session/2b3a7a9e54369997040373389bb5a8b4/window/maximize
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 2
+3 > Host: localhost:57225
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+3 > Accept-Encoding: gzip,deflate
+{}
+
+09:39:36.046 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 2464
+2 < 200
+2 < Content-Length: 14
+2 < Content-Type: application/json; charset=utf-8
+2 < cache-control: no-cache
+{"value":null}
+09:39:36.058 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212/window/maximize
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 2
+3 > Host: localhost:9515
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+3 > Accept-Encoding: gzip,deflate
+{}
+
+09:39:36.181 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 276
+3 < 200
+3 < Content-Length: 51
+3 < Content-Type: application/json; charset=utf-8
+3 < cache-control: no-cache
+{"value":{"height":744,"width":1382,"x":-8,"y":-8}}
+09:39:36.199 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+4 > POST http://localhost:57225/session/2b3a7a9e54369997040373389bb5a8b4/execute/sync
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 78
+4 > Host: localhost:57225
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+4 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\"#user-name\") != null)","args":[]}
+
+09:39:36.220 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 160
+3 < 200
+3 < Content-Length: 51
+3 < Content-Type: application/json; charset=utf-8
+3 < cache-control: no-cache
+{"value":{"height":744,"width":1382,"x":-8,"y":-8}}
+09:39:36.226 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+4 > POST http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212/execute/sync
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 78
+4 > Host: localhost:9515
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+4 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\"#user-name\") != null)","args":[]}
+
+09:39:36.272 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 73
+4 < 200
+4 < Content-Length: 14
+4 < Content-Type: application/json; charset=utf-8
+4 < cache-control: no-cache
+{"value":true}
+09:39:36.283 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 57
+4 < 200
+4 < Content-Length: 14
+4 < Content-Type: application/json; charset=utf-8
+4 < cache-control: no-cache
+{"value":true}
+09:39:36.288 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+5 > POST http://localhost:57225/session/2b3a7a9e54369997040373389bb5a8b4/element
+5 > Content-Type: application/json; charset=UTF-8
+5 > Content-Length: 45
+5 > Host: localhost:57225
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+5 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"#user-name"}
+
+09:39:36.297 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+5 > POST http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212/element
+5 > Content-Type: application/json; charset=UTF-8
+5 > Content-Length: 45
+5 > Host: localhost:9515
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+5 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"#user-name"}
+
+09:39:36.342 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 45
+5 < 200
+5 < Content-Length: 88
+5 < Content-Type: application/json; charset=utf-8
+5 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"48520480-5583-447c-bc21-f47c73efccc9"}}
+09:39:36.347 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+6 > POST http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212/element/48520480-5583-447c-bc21-f47c73efccc9/value
+6 > Content-Type: application/json; charset=UTF-8
+6 > Content-Length: 24
+6 > Host: localhost:9515
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+6 > Accept-Encoding: gzip,deflate
+{"text":"standard_user"}
+
+09:39:36.439 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 146
+5 < 200
+5 < Content-Length: 88
+5 < Content-Type: application/json; charset=utf-8
+5 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"5b5bae27-1ae6-47cf-98f6-5850fc5ce25b"}}
+09:39:36.443 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+6 > POST http://localhost:57225/session/2b3a7a9e54369997040373389bb5a8b4/element/5b5bae27-1ae6-47cf-98f6-5850fc5ce25b/value
+6 > Content-Type: application/json; charset=UTF-8
+6 > Content-Length: 24
+6 > Host: localhost:57225
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+6 > Accept-Encoding: gzip,deflate
+{"text":"standard_user"}
+
+09:39:36.732 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 3295
+2 < 200
+2 < Content-Length: 14
+2 < Content-Type: application/json; charset=utf-8
+2 < cache-control: no-cache
+{"value":null}
+09:39:36.741 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:57227/session/43c468108d58d3efa3820bf4defe7f36/window/maximize
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 2
+3 > Host: localhost:57227
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+3 > Accept-Encoding: gzip,deflate
+{}
+
+09:39:37.021 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 674
+6 < 200
+6 < Content-Length: 14
+6 < Content-Type: application/json; charset=utf-8
+6 < cache-control: no-cache
+{"value":null}
+09:39:37.027 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+7 > POST http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212/execute/sync
+7 > Content-Type: application/json; charset=UTF-8
+7 > Content-Length: 77
+7 > Host: localhost:9515
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+7 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\"#password\") != null)","args":[]}
+
+09:39:37.039 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 11
+7 < 200
+7 < Content-Length: 14
+7 < Content-Type: application/json; charset=utf-8
+7 < cache-control: no-cache
+{"value":true}
+09:39:37.044 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+8 > POST http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212/element
+8 > Content-Type: application/json; charset=UTF-8
+8 > Content-Length: 44
+8 > Host: localhost:9515
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+8 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"#password"}
+
+09:39:37.064 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 323
+3 < 200
+3 < Content-Length: 51
+3 < Content-Type: application/json; charset=utf-8
+3 < cache-control: no-cache
+{"value":{"height":744,"width":1382,"x":-8,"y":-8}}
+09:39:37.142 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+4 > POST http://localhost:57227/session/43c468108d58d3efa3820bf4defe7f36/execute/sync
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 79
+4 > Host: localhost:57227
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+4 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\".login_logo\") != null)","args":[]}
+
+09:39:37.153 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 108
+8 < 200
+8 < Content-Length: 88
+8 < Content-Type: application/json; charset=utf-8
+8 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"74a1f290-5eed-498e-917f-0d8def4761a8"}}
+09:39:37.155 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+9 > POST http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212/element/74a1f290-5eed-498e-917f-0d8def4761a8/value
+9 > Content-Type: application/json; charset=UTF-8
+9 > Content-Length: 23
+9 > Host: localhost:9515
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+9 > Accept-Encoding: gzip,deflate
+{"text":"secret_sauce"}
+
+09:39:37.181 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 38
+4 < 200
+4 < Content-Length: 14
+4 < Content-Type: application/json; charset=utf-8
+4 < cache-control: no-cache
+{"value":true}
+09:39:37.182 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 739
+6 < 200
+6 < Content-Length: 14
+6 < Content-Type: application/json; charset=utf-8
+6 < cache-control: no-cache
+{"value":null}
+09:39:37.187 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+7 > POST http://localhost:57225/session/2b3a7a9e54369997040373389bb5a8b4/execute/sync
+7 > Content-Type: application/json; charset=UTF-8
+7 > Content-Length: 77
+7 > Host: localhost:57225
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+7 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\"#password\") != null)","args":[]}
+
+09:39:37.194 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+5 > POST http://localhost:57227/session/43c468108d58d3efa3820bf4defe7f36/execute/sync
+5 > Content-Type: application/json; charset=UTF-8
+5 > Content-Length: 77
+5 > Host: localhost:57227
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+5 > Accept-Encoding: gzip,deflate
+{"script":"return document.querySelector(\".login_logo\") != null","args":[]}
+
+09:39:37.209 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 22
+7 < 200
+7 < Content-Length: 14
+7 < Content-Type: application/json; charset=utf-8
+7 < cache-control: no-cache
+{"value":true}
+09:39:37.213 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 19
+5 < 200
+5 < Content-Length: 14
+5 < Content-Type: application/json; charset=utf-8
+5 < cache-control: no-cache
+{"value":true}
+09:39:37.215 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+8 > POST http://localhost:57225/session/2b3a7a9e54369997040373389bb5a8b4/element
+8 > Content-Type: application/json; charset=UTF-8
+8 > Content-Length: 44
+8 > Host: localhost:57225
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+8 > Accept-Encoding: gzip,deflate
+{"using":"css selector","value":"#password"}
+
+09:39:37.237 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+6 > DELETE http://localhost:57227/session/43c468108d58d3efa3820bf4defe7f36/window
+6 > Host: localhost:57227
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+6 > Accept-Encoding: gzip,deflate
+
+
+09:39:37.243 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 28
+8 < 200
+8 < Content-Length: 88
+8 < Content-Type: application/json; charset=utf-8
+8 < cache-control: no-cache
+{"value":{"element-6066-11e4-a52e-4f735466cecf":"90acb7cd-1201-4573-a93b-87f3d2d4f42e"}}
+09:39:37.245 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+9 > POST http://localhost:57225/session/2b3a7a9e54369997040373389bb5a8b4/element/90acb7cd-1201-4573-a93b-87f3d2d4f42e/value
+9 > Content-Type: application/json; charset=UTF-8
+9 > Content-Length: 23
+9 > Host: localhost:57225
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+9 > Accept-Encoding: gzip,deflate
+{"text":"secret_sauce"}
+
+09:39:37.607 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 449
+9 < 200
+9 < Content-Length: 14
+9 < Content-Type: application/json; charset=utf-8
+9 < cache-control: no-cache
+{"value":null}
+09:39:37.612 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+10 > POST http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212/execute/sync
+10 > Content-Type: application/json; charset=UTF-8
+10 > Content-Length: 81
+10 > Host: localhost:9515
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+10 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\"#login-button\") != null)","args":[]}
+
+09:39:37.692 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 80
+10 < 200
+10 < Content-Length: 14
+10 < Content-Type: application/json; charset=utf-8
+10 < cache-control: no-cache
+{"value":true}
+09:39:37.702 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+11 > POST http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212/execute/sync
+11 > Content-Type: application/json; charset=UTF-8
+11 > Content-Length: 79
+11 > Host: localhost:9515
+11 > Connection: Keep-Alive
+11 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+11 > Accept-Encoding: gzip,deflate
+{"script":"return document.querySelector(\"#login-button\").click()","args":[]}
+
+09:39:37.993 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 747
+9 < 200
+9 < Content-Length: 14
+9 < Content-Type: application/json; charset=utf-8
+9 < cache-control: no-cache
+{"value":null}
+09:39:37.997 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+10 > POST http://localhost:57225/session/2b3a7a9e54369997040373389bb5a8b4/execute/sync
+10 > Content-Type: application/json; charset=UTF-8
+10 > Content-Length: 81
+10 > Host: localhost:57225
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+10 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\"#login-button\") != null)","args":[]}
+
+09:39:38.026 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 28
+10 < 200
+10 < Content-Length: 14
+10 < Content-Type: application/json; charset=utf-8
+10 < cache-control: no-cache
+{"value":true}
+09:39:38.032 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+11 > POST http://localhost:57225/session/2b3a7a9e54369997040373389bb5a8b4/execute/sync
+11 > Content-Type: application/json; charset=UTF-8
+11 > Content-Length: 79
+11 > Host: localhost:57225
+11 > Connection: Keep-Alive
+11 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+11 > Accept-Encoding: gzip,deflate
+{"script":"return document.querySelector(\"#login-button\").click()","args":[]}
+
+09:39:38.053 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 350
+11 < 200
+11 < Content-Length: 14
+11 < Content-Type: application/json; charset=utf-8
+11 < cache-control: no-cache
+{"value":null}
+09:39:38.093 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+12 > POST http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212/execute/sync
+12 > Content-Type: application/json; charset=UTF-8
+12 > Content-Length: 74
+12 > Host: localhost:9515
+12 > Connection: Keep-Alive
+12 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+12 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\".title\") != null)","args":[]}
+
+09:39:38.144 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 49
+12 < 200
+12 < Content-Length: 14
+12 < Content-Type: application/json; charset=utf-8
+12 < cache-control: no-cache
+{"value":true}
+09:39:38.149 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+13 > POST http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212/execute/sync
+13 > Content-Type: application/json; charset=UTF-8
+13 > Content-Length: 72
+13 > Host: localhost:9515
+13 > Connection: Keep-Alive
+13 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+13 > Accept-Encoding: gzip,deflate
+{"script":"return document.querySelector(\".title\") != null","args":[]}
+
+09:39:38.310 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 161
+13 < 200
+13 < Content-Length: 14
+13 < Content-Type: application/json; charset=utf-8
+13 < cache-control: no-cache
+{"value":true}
+09:39:38.319 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+14 > POST http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212/execute/sync
+14 > Content-Type: application/json; charset=UTF-8
+14 > Content-Length: 76
+14 > Host: localhost:9515
+14 > Connection: Keep-Alive
+14 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+14 > Accept-Encoding: gzip,deflate
+{"script":"return document.querySelector(\".title\").textContent","args":[]}
+
+09:39:38.479 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 160
+14 < 200
+14 < Content-Length: 20
+14 < Content-Type: application/json; charset=utf-8
+14 < cache-control: no-cache
+{"value":"Products"}
+09:39:38.482 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+15 > DELETE http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212/window
+15 > Host: localhost:9515
+15 > Connection: Keep-Alive
+15 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+15 > Accept-Encoding: gzip,deflate
+
+
+09:39:38.681 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 649
+11 < 200
+11 < Content-Length: 14
+11 < Content-Type: application/json; charset=utf-8
+11 < cache-control: no-cache
+{"value":null}
+09:39:38.720 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+12 > POST http://localhost:57225/session/2b3a7a9e54369997040373389bb5a8b4/execute/sync
+12 > Content-Type: application/json; charset=UTF-8
+12 > Content-Length: 87
+12 > Host: localhost:57225
+12 > Connection: Keep-Alive
+12 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+12 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\".shopping_cart_link\") != null)","args":[]}
+
+09:39:38.865 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 145
+12 < 200
+12 < Content-Length: 14
+12 < Content-Type: application/json; charset=utf-8
+12 < cache-control: no-cache
+{"value":true}
+09:39:38.872 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+13 > POST http://localhost:57225/session/2b3a7a9e54369997040373389bb5a8b4/execute/sync
+13 > Content-Type: application/json; charset=UTF-8
+13 > Content-Length: 85
+13 > Host: localhost:57225
+13 > Connection: Keep-Alive
+13 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+13 > Accept-Encoding: gzip,deflate
+{"script":"return document.querySelector(\".shopping_cart_link\") != null","args":[]}
+
+09:39:38.890 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 5652
+2 < 200
+2 < Content-Length: 14
+2 < Content-Type: application/json; charset=utf-8
+2 < cache-control: no-cache
+{"value":null}
+09:39:38.895 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+3 > POST http://localhost:57226/session/1219b9c10eb7466315b9eb95fea21569/window/maximize
+3 > Content-Type: application/json; charset=UTF-8
+3 > Content-Length: 2
+3 > Host: localhost:57226
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+3 > Accept-Encoding: gzip,deflate
+{}
+
+09:39:38.911 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 38
+13 < 200
+13 < Content-Length: 14
+13 < Content-Type: application/json; charset=utf-8
+13 < cache-control: no-cache
+{"value":true}
+09:39:38.914 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+14 > DELETE http://localhost:57225/session/2b3a7a9e54369997040373389bb5a8b4/window
+14 > Host: localhost:57225
+14 > Connection: Keep-Alive
+14 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+14 > Accept-Encoding: gzip,deflate
+
+
+09:39:40.410 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1514
+3 < 200
+3 < Content-Length: 51
+3 < Content-Type: application/json; charset=utf-8
+3 < cache-control: no-cache
+{"value":{"height":744,"width":1382,"x":-8,"y":-8}}
+09:39:40.495 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+4 > POST http://localhost:57226/session/1219b9c10eb7466315b9eb95fea21569/execute/sync
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 81
+4 > Host: localhost:57226
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+4 > Accept-Encoding: gzip,deflate
+{"script":"return (document.querySelector(\"#login-button\") != null)","args":[]}
+
+09:39:40.641 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 146
+4 < 200
+4 < Content-Length: 14
+4 < Content-Type: application/json; charset=utf-8
+4 < cache-control: no-cache
+{"value":true}
+09:39:40.647 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+5 > POST http://localhost:57226/session/1219b9c10eb7466315b9eb95fea21569/execute/sync
+5 > Content-Type: application/json; charset=UTF-8
+5 > Content-Length: 79
+5 > Host: localhost:57226
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+5 > Accept-Encoding: gzip,deflate
+{"script":"return document.querySelector(\"#login-button\") != null","args":[]}
+
+09:39:41.626 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 979
+5 < 200
+5 < Content-Length: 14
+5 < Content-Type: application/json; charset=utf-8
+5 < cache-control: no-cache
+{"value":true}
+09:39:41.627 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 4389
+6 < 200
+6 < Content-Length: 12
+6 < Content-Type: application/json; charset=utf-8
+6 < cache-control: no-cache
+{"value":[]}
+09:39:41.629 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+7 > DELETE http://localhost:57227/session/43c468108d58d3efa3820bf4defe7f36
+7 > Host: localhost:57227
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+7 > Accept-Encoding: gzip,deflate
+
+
+09:39:41.633 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+6 > DELETE http://localhost:57226/session/1219b9c10eb7466315b9eb95fea21569/window
+6 > Host: localhost:57226
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+6 > Accept-Encoding: gzip,deflate
+
+
+09:39:42.391 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 762
+7 < 200
+7 < Content-Length: 14
+7 < Content-Type: application/json; charset=utf-8
+7 < cache-control: no-cache
+{"value":null}
+09:39:42.392 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - closing command: chromedriver_1633925352843
+09:39:42.427 [chromedriver_1633925352843] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/examples/users/chromedriver.exe, --port=57227, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chromedriver_1633925352843] working dir: target\chromedriver_1633925352843
+09:39:42.469 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 3986
+15 < 200
+15 < Content-Length: 12
+15 < Content-Type: application/json; charset=utf-8
+15 < cache-control: no-cache
+{"value":[]}
+09:39:42.471 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+16 > DELETE http://localhost:9515/session/45df22ed7b54047d458a8c0060fd4212
+16 > Host: localhost:9515
+16 > Connection: Keep-Alive
+16 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+16 > Accept-Encoding: gzip,deflate
+
+
+09:39:42.663 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 192
+16 < 200
+16 < Content-Length: 14
+16 < Content-Type: application/json; charset=utf-8
+16 < cache-control: no-cache
+{"value":null}
+09:39:42.663 [pool-1-thread-1] DEBUG com.intuit.karate.shell.Command - closing command: chromedriver_1633925352678
+09:39:42.721 [chromedriver_1633925352678] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/examples/users/chromedriver.exe, --port=9515, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chromedriver_1633925352678] working dir: target\chromedriver_1633925352678
+09:39:42.761 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1127
+6 < 200
+6 < Content-Length: 12
+6 < Content-Type: application/json; charset=utf-8
+6 < cache-control: no-cache
+{"value":[]}
+09:39:42.765 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+7 > DELETE http://localhost:57226/session/1219b9c10eb7466315b9eb95fea21569
+7 > Host: localhost:57226
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+7 > Accept-Encoding: gzip,deflate
+
+
+09:39:42.935 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 170
+7 < 200
+7 < Content-Length: 14
+7 < Content-Type: application/json; charset=utf-8
+7 < cache-control: no-cache
+{"value":null}
+09:39:42.935 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - closing command: chromedriver_1633925352840
+09:39:42.960 [chromedriver_1633925352840] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/examples/users/chromedriver.exe, --port=57226, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chromedriver_1633925352840] working dir: target\chromedriver_1633925352840
+09:39:42.990 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 4075
+14 < 200
+14 < Content-Length: 12
+14 < Content-Type: application/json; charset=utf-8
+14 < cache-control: no-cache
+{"value":[]}
+09:39:42.993 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+15 > DELETE http://localhost:57225/session/2b3a7a9e54369997040373389bb5a8b4
+15 > Host: localhost:57225
+15 > Connection: Keep-Alive
+15 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_251)
+15 > Accept-Encoding: gzip,deflate
+
+
+09:39:43.109 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 115
+15 < 200
+15 < Content-Length: 14
+15 < Content-Type: application/json; charset=utf-8
+15 < cache-control: no-cache
+{"value":null}
+09:39:43.110 [pool-1-thread-2] DEBUG com.intuit.karate.shell.Command - closing command: chromedriver_1633925352811
+09:39:43.203 [chromedriver_1633925352811] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [src/test/java/examples/users/chromedriver.exe, --port=57225, --user-data-dir=C:\Users\cyril\IdeaProjects\KarateUiAutomationTest\target\chromedriver_1633925352811] working dir: target\chromedriver_1633925352811
+09:39:47.371 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:examples/users/home.feature
+09:39:47.634 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:examples/users/login.feature
