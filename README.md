@@ -48,5 +48,5 @@ Firefox:`mvn clean test -Dbrowser=firefox -Dtest=TestRunnerCucumberReporting`
 
 Headless firefox:`mvn clean test -Dbrowser=headlessfirefox -Dtest=TestRunnerCucumberReporting`
 
-# Cucumber Report location:KarateUiAutomationTest\target\cucumber-html-reports\report-feature_1407342867.html
+# Cucumber Report location:KarateUiAutomationTest\target\cucumber-html-reports\overview-features.html
 
