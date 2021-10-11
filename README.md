@@ -16,8 +16,6 @@ Firefox:`mvn clean test -Dbrowser=firefox -Dtest=TestRunnerParallel`
 
 Headless firefox:`mvn clean test -Dbrowser=headlessfirefox -Dtest=TestRunnerParallel`
 
-Report location: KarateUiAutomationTest/target/karate-reports/karate-summary.html
-
 For sequential execution use following commands in the following  browsers
 
 Native Chrome:`mvn clean test -Dbrowser=nativechrome -Dtest=TestRunner`
