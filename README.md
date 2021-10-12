@@ -48,3 +48,11 @@ Headless firefox:`mvn clean test -Dbrowser=headlessfirefox -Dtest=TestRunnerCucu
 
 # Cucumber Report location:KarateUiAutomationTest\target\cucumber-html-reports\overview-features.html
 
+# Prerequisites
+
+1.Java 8/+ should be present and environment variable should be set in the local system.
+
+2.Maven should be present and environment variable should be set in the local system.
+
+3.All browsers mentioned above should be present in the local system.
+
