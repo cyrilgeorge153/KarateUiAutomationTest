@@ -7,9 +7,11 @@ Feature: swag labs home page ui test cases
 
   Scenario: swag labs home page heading display test
     And waitFor(home_feature.home_title)
+    And screenshot()
     Then match exists(home_feature.home_title) == true
     Then match text(home_feature.home_title) == 'Products'
 
   Scenario: swag labs home page cart display test
     And waitFor(home_feature.home_shopping_cart_link)
+    And screenshot()
     Then match exists(home_feature.home_shopping_cart_link) == true
