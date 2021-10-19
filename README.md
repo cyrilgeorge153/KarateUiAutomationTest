@@ -16,7 +16,7 @@ Firefox:`mvn clean test -Dbrowser=firefox -Dtest=TestRunnerParallel`
 
 Headless firefox:`mvn clean test -Dbrowser=headlessfirefox -Dtest=TestRunnerParallel`
 
-For sequential execution use following commands in the following  browsers
+# For sequential execution use following commands in the following  browsers
 
 Native Chrome:`mvn clean test -Dbrowser=nativechrome -Dtest=TestRunner`
 
@@ -48,7 +48,7 @@ Headless firefox:`mvn clean test -Dbrowser=headlessfirefox -Dtest=TestRunnerCucu
 
 # Cucumber Report location:KarateUiAutomationTest\target\cucumber-html-reports\overview-features.html
 
-**Test execution gif->** 
+**Test execution gif->** ![KarateUiAutomationTest gif](https://user-images.githubusercontent.com/52770689/137847569-301c5a4f-21bf-46ec-9277-1ec4d768035e.gif)
 
 # Prerequisites
 
