@@ -19,7 +19,7 @@ function fn() {
    {
       if (!grid_url)
        {
-         karate.configure('driver', { type: 'chromedriver', executable: 'src/test/java/examples/users/chromedriver.exe' });
+         karate.configure('driver', { type: 'chromedriver', executable: 'src/test/java/examples/users/chromedriver.exe', highlight: true, highlightDuration: 1000 });
          karate.log("Selected Chrome");
       }
       else
@@ -32,7 +32,7 @@ function fn() {
    {
       if (!grid_url)
        {
-          karate.configure('driver', { type: 'geckodriver', executable: 'src/test/java/examples/users/geckodriver.exe' });
+          karate.configure('driver', { type: 'geckodriver', executable: 'src/test/java/examples/users/geckodriver.exe', highlight: true, highlightDuration: 1000 });
           karate.log("Selected Firefox");
       }
       else
@@ -71,7 +71,7 @@ else if (browser == 'headlessfirefox')
             {
                if (!grid_url)
                 {
-                  karate.configure('driver', { type: 'chrome', headless: false });
+                  karate.configure('driver', { type: 'chrome', headless: false, highlight: true, highlightDuration: 1000 });
                    karate.log("Selected Native Chrome");
                }
                else
