@@ -1,0 +1,321 @@
+# Created at 2021-12-23T12:48:06.703
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2021-12-23T12:48:09.004
+Unexpected IOException with stream: 12:48:09.004 [pool-1-thread-4] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65290 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4066 milliseconds for url: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:09.299
+Unexpected IOException with stream: 12:48:09.299 [pool-1-thread-3] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65291 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4096 milliseconds for url: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:11.016
+Unexpected IOException with stream: 12:48:11.014 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - attempt #7 waiting for http to be ready at: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:11.018
+Unexpected IOException with stream: 12:48:11.018 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+8 > GET http://localhost:65290/json
+8 > Host: localhost:65290
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+8 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:11.303
+Unexpected IOException with stream: 12:48:11.302 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - attempt #7 waiting for http to be ready at: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:11.305
+Unexpected IOException with stream: 12:48:11.304 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+8 > GET http://localhost:65291/json
+8 > Host: localhost:65291
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+8 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:15.111
+Unexpected IOException with stream: 12:48:15.111 [pool-1-thread-4] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65290 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4095 milliseconds for url: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:15.377
+Unexpected IOException with stream: 12:48:15.376 [pool-1-thread-3] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65291 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4073 milliseconds for url: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:17.111
+Unexpected IOException with stream: 12:48:17.111 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - attempt #8 waiting for http to be ready at: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:17.111
+Unexpected IOException with stream: 12:48:17.111 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+9 > GET http://localhost:65290/json
+9 > Host: localhost:65290
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+9 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:17.393
+Unexpected IOException with stream: 12:48:17.393 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - attempt #8 waiting for http to be ready at: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:17.393
+Unexpected IOException with stream: 12:48:17.393 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+9 > GET http://localhost:65291/json
+9 > Host: localhost:65291
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+9 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:21.218
+Unexpected IOException with stream: 12:48:21.218 [pool-1-thread-4] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65290 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4107 milliseconds for url: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:21.478
+Unexpected IOException with stream: 12:48:21.478 [pool-1-thread-3] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65291 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4085 milliseconds for url: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:23.231
+Unexpected IOException with stream: 12:48:23.230 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - attempt #9 waiting for http to be ready at: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:23.235
+Unexpected IOException with stream: 12:48:23.234 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+10 > GET http://localhost:65290/json
+10 > Host: localhost:65290
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+10 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:23.482
+Unexpected IOException with stream: 12:48:23.479 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - attempt #9 waiting for http to be ready at: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:23.491
+Unexpected IOException with stream: 12:48:23.488 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+10 > GET http://localhost:65291/json
+10 > Host: localhost:65291
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+10 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:27.337
+Unexpected IOException with stream: 12:48:27.337 [pool-1-thread-4] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65290 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4105 milliseconds for url: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:27.587
+Unexpected IOException with stream: 12:48:27.587 [pool-1-thread-3] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65291 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4103 milliseconds for url: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:29.341
+Unexpected IOException with stream: 12:48:29.339 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - attempt #10 waiting for http to be ready at: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:29.346
+Unexpected IOException with stream: 12:48:29.344 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+11 > GET http://localhost:65290/json
+11 > Host: localhost:65290
+11 > Connection: Keep-Alive
+11 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+11 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:29.592
+Unexpected IOException with stream: 12:48:29.592 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - attempt #10 waiting for http to be ready at: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:29.592
+Unexpected IOException with stream: 12:48:29.592 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+11 > GET http://localhost:65291/json
+11 > Host: localhost:65291
+11 > Connection: Keep-Alive
+11 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+11 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:33.435
+Unexpected IOException with stream: 12:48:33.435 [pool-1-thread-4] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65290 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4093 milliseconds for url: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:33.716
+Unexpected IOException with stream: 12:48:33.716 [pool-1-thread-3] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65291 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4124 milliseconds for url: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:35.450
+Unexpected IOException with stream: 12:48:35.450 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - attempt #11 waiting for http to be ready at: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:35.450
+Unexpected IOException with stream: 12:48:35.450 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+12 > GET http://localhost:65290/json
+12 > Host: localhost:65290
+12 > Connection: Keep-Alive
+12 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+12 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:35.716
+Unexpected IOException with stream: 12:48:35.716 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - attempt #11 waiting for http to be ready at: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:35.716
+Unexpected IOException with stream: 12:48:35.716 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+12 > GET http://localhost:65291/json
+12 > Host: localhost:65291
+12 > Connection: Keep-Alive
+12 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+12 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:39.535
+Unexpected IOException with stream: 12:48:39.534 [pool-1-thread-4] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65290 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4084 milliseconds for url: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:39.815
+Unexpected IOException with stream: 12:48:39.814 [pool-1-thread-3] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65291 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4098 milliseconds for url: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:41.550
+Unexpected IOException with stream: 12:48:41.550 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - attempt #12 waiting for http to be ready at: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:41.552
+Unexpected IOException with stream: 12:48:41.552 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+13 > GET http://localhost:65290/json
+13 > Host: localhost:65290
+13 > Connection: Keep-Alive
+13 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+13 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:41.820
+Unexpected IOException with stream: 12:48:41.820 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - attempt #12 waiting for http to be ready at: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:41.820
+Unexpected IOException with stream: 12:48:41.820 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+13 > GET http://localhost:65291/json
+13 > Host: localhost:65291
+13 > Connection: Keep-Alive
+13 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+13 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:45.636
+Unexpected IOException with stream: 12:48:45.636 [pool-1-thread-4] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65290 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4085 milliseconds for url: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:45.901
+Unexpected IOException with stream: 12:48:45.901 [pool-1-thread-3] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65291 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4081 milliseconds for url: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:47.636
+Unexpected IOException with stream: 12:48:47.636 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - attempt #13 waiting for http to be ready at: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:47.636
+Unexpected IOException with stream: 12:48:47.636 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+14 > GET http://localhost:65290/json
+14 > Host: localhost:65290
+14 > Connection: Keep-Alive
+14 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+14 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:47.902
+Unexpected IOException with stream: 12:48:47.902 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - attempt #13 waiting for http to be ready at: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:47.902
+Unexpected IOException with stream: 12:48:47.902 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+14 > GET http://localhost:65291/json
+14 > Host: localhost:65291
+14 > Connection: Keep-Alive
+14 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+14 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:51.739
+Unexpected IOException with stream: 12:48:51.739 [pool-1-thread-4] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65290 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4103 milliseconds for url: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:51.989
+Unexpected IOException with stream: 12:48:51.989 [pool-1-thread-3] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65291 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4087 milliseconds for url: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:53.754
+Unexpected IOException with stream: 12:48:53.754 [pool-1-thread-4] DEBUG com.intuit.karate.shell.Command - attempt #14 waiting for http to be ready at: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:53.754
+Unexpected IOException with stream: 12:48:53.754 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+15 > GET http://localhost:65290/json
+15 > Host: localhost:65290
+15 > Connection: Keep-Alive
+15 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+15 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:53.989
+Unexpected IOException with stream: 12:48:53.989 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - attempt #14 waiting for http to be ready at: http://localhost:65291/json
+
+
+# Created at 2021-12-23T12:48:53.989
+Unexpected IOException with stream: 12:48:53.989 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+15 > GET http://localhost:65291/json
+15 > Host: localhost:65291
+15 > Connection: Keep-Alive
+15 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+15 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2021-12-23T12:48:57.848
+Unexpected IOException with stream: 12:48:57.848 [pool-1-thread-4] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65290 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4094 milliseconds for url: http://localhost:65290/json
+
+
+# Created at 2021-12-23T12:48:58.098
+Unexpected IOException with stream: 12:48:58.098 [pool-1-thread-3] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to localhost:65291 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect, http call failed after 4109 milliseconds for url: http://localhost:65291/json
+
+
